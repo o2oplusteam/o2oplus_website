@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="O2O商圈新零售电商中间件平台，助力传统商户快速转型新零售建 新零售 新零售转型 新零售电商平台 互联网+新零售 互联网+本地服务 移动电商 本地生活服务 O2O 超市便利店新零售 生鲜新零售 果蔬新零售 智慧餐厅 手机点餐 智慧商城 本地租房 APP 本地美食 本地新闻 本地旅游 本地兼职招聘 APP开发 互联网+政务 智慧城市应用快速搭建 物联网应用快速搭建 移动政务应用快速搭建 微信开发 微信运营 微信小程序">
+    <meta name="description" content="果蔬站是O2O商圈新零售超级APP移动电商平台旗下的一款专门针对果蔬生鲜配送的移动电商平台，是全球领先的新零售移动电商应用快速搭建中间件平台的一个垂直新零售应用场景。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果蔬e站生鲜电商平台</title>
+    <!--pageMeta-->
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Elements Styles -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <!-- Loading Magnific-Popup Styles -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- Loading Font Styles -->
+    <link href="css/iconfont-style.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="scripts/html5shiv.js"></script>
+      <script src="scripts/respond.min.js"></script>
+    <![endif]-->
+    <!--headerIncludes-->
+</head>
+
+<body data-spy="scroll" data-target=".navMenuCollapse">
+    <div id="wrap">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <div class="container">
+                <a class="navbar-brand goto" href="index.html"> <img src="images/p2_fruites/p2-logo.png" height="45" alt="O2O Logo"> </a>
+                <!-- <button class="round-toggle navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+                <button class="navbar-toggler navbar-toggler-right greenBtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item"><a class="nav-link" href="index.html">O2O商圈新零售超级APP</a></li>
+                        <!-- <li class="nav-item"><a href="order.html">APP平台</a></li> -->
+						<li class="nav-item active"><a class="nav-link" href="p2_fruitveggie.html">果蔬e站生鲜电商</a></li>
+                        <li class="nav-item"><a class="nav-link" href="p1_superapp.html">新零售电商平台定制</a></li>
+						<li class="nav-item"><a class="nav-link" href="p5_MobileGovernment.html">移动政务应用定制</a></li>
+						<li class="nav-item"><a class="nav-link" href="p4_IoT.html">物联网应用定制</a></li>
+						<li class="nav-item"><a class="nav-link" href="p3_smartcity.html">智慧城市应用定制</a></li>
+						
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<div style=" position: fixed;right: 0;top:90%;z-index:400">
+		<img src="images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
+		</div>
+        <!-- INTRO CENTER -->
+        <header id="intro-center" class="intro-block bg-color1 dark-bg fixed-bg text-center" style="outline-offset: -3px;">
+                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators" style="bottom:5px;">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+					<div class="carousel-item active" id="carousel-img-2" onclick="herf(2)">
+                       <a href="http://www.o2oplus.com.cn/p2_fruitveggie.html" /> 
+                    </div>
+                    <div class="carousel-item" id="carousel-img-1" onclick="herf(1)">
+						<a href="http://www.o2oplus.com.cn/index.html" /> <div class="carousel-caption d-none d-md-block"> </div>
+                    </div>
+                    <div class="carousel-item" id="carousel-img-3" onclick="herf(3)">
+                       <a href="http://www.o2oplus.com.cn/p1_superapp.html" /> <div class="carousel-caption d-none d-md-block"> </div>
+                    </div>
+					<div class="carousel-item" id="carousel-img-4" onclick="herf(4)">
+                       <a href="http://www.o2oplus.com.cn/p5_MobileGovernment.html" /> <div class="carousel-caption d-none d-md-block"> </div>
+                    </div>
+					<div class="carousel-item" id="carousel-img-5" onclick="herf(5)">
+                       <a href="http://www.o2oplus.com.cn/p4_IoT.html" /> <div class="carousel-caption d-none d-md-block"> </div>
+                    </div>
+					<div class="carousel-item" id="carousel-img-6" onclick="herf(6)">
+                       <a href="http://www.o2oplus.com.cn/p3_smartcity.html" /> <div class="carousel-caption d-none d-md-block"> </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+            </div>
+			 <div class="rolesNav row text-center" style="background-color:#fff;font-color:black;">
+                    <div class="btn-item col-md-4 btn-right-border clickToScroll" href="#role-supplier">
+                        <h3 class="roles-title" style="color:black" >上游供应商入口</h3>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-link btn-link-enhance">登录</button>
+                            <button type="button" class="btn btn-link">入驻</button>
+                        </div>
+						
+                    </div>
+                    <div class="btn-item col-md-4 clickToScroll" href="#role-deliver">
+                        <h3 class="roles-title" style="color:black">运营合伙人入口</h3>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-link btn-link-enhance">登录</button>
+                            <button type="button" class="btn btn-link">入驻</button>
+                        </div>
+                    </div>
+                    <div class="btn-item col-md-4 btn-left-border clickToScroll" href="#role-customer">
+                        <h3 class="roles-title" style="color:black">客户入口</h3>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-link btn-link-enhance">登录</button>
+                            <button type="button" class="btn btn-link">入驻</button>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="btn btn-secondary">Middle</button>
+                        <button type="button" class="btn btn-secondary">Right</button> -->
+                </div>
+        </header>
+        <!-- CONTENT CENTER VIDEO BLOCK : -->
+        <section class="half-height images-panels" id="role-customer" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="big-title" style="margin:0px;">客户入口</h2> </div>
+                <div class="row" style="padding-bottom:0px;">
+                    <div class="col-md-4 panel" id="portfolio-item-1"> <img src="images/p2_fruites/s6_P_1.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">手机下单</h3> </div>
+                    <div class="col-md-4 panel" id="portfolio-item-2"> <img src="images/p2_fruites/s6_P_2.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">地铁口取货</h3> </div>
+                    <div class="col-md-4 panel" id="portfolio-item-3"> <img src="images/p2_fruites/s6_P_3.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">产品图片</h3> </div>
+                </div>
+            </div>
+        </section>
+       <!-- <section id="cutomer-role-intro-fruit" class="dark-bg half-height pb-2 pt-5" style="min-height:0vh" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-1 offset-md-4 transBG">
+                        <ul class="item-list-left" style="color:orange;">
+                            <li class="text-center pb-4">
+                                <h2 style="color:orange;" class="mb-1">蔬菜水果购物新体验</h2> </li>
+                            <li class="pb-3">果蔬e站是国内首款互联网+果蔬直通车APP移动电商平台，在北京市288个地铁口定点配送蔬菜水果，顾客每天通过手机APP和微信一键下单并线上支付，下班到地铁口就近提货，扫二维码核销订单，骑共享单车回家。</li>
+                            <li class="pb-3">果蔬e站为下班乘坐地铁回家的年轻人提供安全、便利、健康、新鲜、物美价廉的蔬菜水果购物新体验，解决年轻上班族的吃饭刚需。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+		
+		<section id="delivery-role-intro-fruit" class="dark-bg half-height-fruit py-3" style="background-color:#EF8200;" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-1 offset-md-4 transBG">
+                        <ul class="item-list-left">
+                            <li class="text-center pb-4" style="height:30px;">
+                                <h2 class="mb-1">蔬菜水果购物新体验</h2>
+                            </li>
+                            <li class="pb-3">果蔬e站是国内首款互联网+果蔬直通车APP移动电商平台，在北京市288个地铁口定点配送蔬菜水果，顾客每天通过手机APP和微信一键下单并线上支付，下班到地铁口就近提货，扫二维码核销订单，骑共享单车回家。</li>
+                            <li class="pb-3">果蔬e站为下班乘坐地铁回家的年轻人提供安全、便利、健康、新鲜、物美价廉的蔬菜水果购物新体验，解决年轻上班族的吃饭刚需。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+			<img class="stickBtm-img" src="images/p2_fruites/s7BG_L_G.png"  alt=""> 
+			<!--<img class="stickBtm-img" src="images/p2_fruites/s7BG_R.png" width="370"style="height:100%;width:740px"; alt="">-->
+		</section>
+        <section id="delivery-roles" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center pt-4"> 
+						<img class="screen" src="images/p2_fruites/s8QR.png" width="218" style="margin-top:30px;" alt="商家版下载二维码">
+                        <p class="pt-1" style="text-indent: 0em;margin-top:15px;"><strong>扫码下载果蔬e站买家版APP</strong></p>
+                    </div>
+                    <div class="col-md-9 px-4"> <img class="screen full-width" src="images/p2_fruites/s4_login.png" alt="注册流程">
+                        <!-- <p>终端用户可以搜索并获得大量的本地服务商户</p> -->
+                    </div>
+                </div>
+            </div>
+            <!--EndFragment-->
+        </section>
+        <!-- CLIENTS SLIDER 2 BLOCK -->
+        <section class="half-height images-panels" id="role-deliver" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="big-title" style="margin:0px;">运营合伙人入口</h2> </div>
+                <div class="row" style="padding-bottom:0px;">
+                    <div class="col-md-4 panel" id="portfolio-item-1"> <img src="/images/p2_fruites/s4_sp1.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">果蔬直通车</h3> </div>
+                    <div class="col-md-4 panel" id="portfolio-item-2"> <img src="/images/p2_fruites/s4_sp2.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">站点配送车</h3> </div>
+                    <div class="col-md-4 panel" id="portfolio-item-3"> <img src="/images/p2_fruites/s4_sp3.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">地铁人流入口</h3> </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTENT LEFT BLOCK -->
+        <section id="delivery-role-intro-fruit" class="dark-bg half-height-fruit py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-1 offset-md-4 transBG">
+                        <ul class="item-list-left">
+                            <li class="text-center pb-4">
+                                <h2 class="mb-1">日客流量超千万</h2>
+                                <h2 class="mb-1">闲暇时段也赚钱</h2> </li>
+                            <li class="pb-3">果蔬e站平台开启了地铁口黄金地段互联网+果蔬平台合伙运营赚大钱的新模式，在北京市288个地铁口部署互联网+果蔬直通车作为线上平台的蔬菜水果自提点，替代传统实体菜店，零门槛无摊位租金，无需进货资金、蔬果零库存无损耗，只需一部手机和现有蔬菜进货车即可轻松加入平台参与运营，闲暇时间利用手机卖菜赚钱。</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div> <img class="stickBtm-img" src="images/p2_fruites/s5BG_L_G.png"  alt=""> </section>
+        <section id="delivery-roles" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center pt-4"> <img class="screen" src="images/p2_fruites/s6_QR.png" style="margin-top:30px;" width="218" alt="商家版下载二维码">
+                        <p class="pt-1" style="text-indent: 0em;margin-top:15px;"><strong>扫码关注果蔬e站运营合伙人</strong></p>
+                    </div>
+                    <div class="col-md-9 px-4"> <img class="screen full-width" src="images/p2_fruites/s4_login.png" alt="注册流程">
+                        <!-- <p>终端用户可以搜索并获得大量的本地服务商户</p> -->
+                    </div>
+                </div>
+            </div>
+            <!--EndFragment-->
+        </section>
+        <!-- CONTENT CENTER VIDEO BLOCK : -->
+        
+		<section class="half-height images-panels mt-3" id="role-supplier" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="big-title" style="margin:0px;">果蔬供应商入口</h2> </div>
+                <div class="row" style="padding-bottom:0px;">
+                    <div class="col-md-4 panel" id="portfolio-item-1"> <img src="images/p2_fruites/s2gys1.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">果蔬原产地</h3> </div>
+                    <div class="col-md-4 panel" id="portfolio-item-2"> <img src="images/p2_fruites/s2gys2.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">果蔬合作社</h3> </div>
+                    <div class="col-md-4 panel" id="portfolio-item-3"> <img src="images/p2_fruites/s2gys3.png" alt="" class="screen full-width">
+                        <h3 style="margin:0px;">果蔬批发商</h3> </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTENT LEFT BLOCK -->
+        <section id="supplier-role-intro" class="dark-bg half-height" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center stickBtm"> <img class="screen stickBtm-img" style="display:none;" src="images/p2_fruites/s3phone.png" width="300" alt=""> </div>
+                    <div class="col-md-8 mt-4">
+                        <ul class="item-list-left">
+                            <li class="text-center pb-4">
+                                <h2 style="margin:0px;">果蔬原产地直供</h2> </li>
+                            <li class="pb-3">产地直供：平台精选优质果蔬供应商，从原产地精选大型果蔬基地、合作社和果蔬批发商入驻果蔬e站平台，实现原产地和消费者直接对接，优化中间环节，确保客户在平台上买到安全放心的蔬菜与水果。</li>
+                             <li class="pb-3">安全可追溯——平台实现了蔬菜水果安全全程可追溯，从原产地基地和合作社对每一批次的蔬菜水果必须进行农药残留检测，同时平台在产品分装前再次检测，消费者可以直接通过手机查询蔬菜水果的原产地和检测结果，让消费者更放心。</li>
+                            <li class="pb-3">大数据指导生产——平台的消费大数据可以帮助农民以销定产，指导农民生产更畅销产品，避免产品过剩伤农害农。</li>
+                            <li class="pb-3">果蔬更新鲜——平台通过科技手段优化流通环节，去掉中间环节，提升了供应链效率，消费者能买到更新鲜、更优惠的蔬菜和水果，也会大幅提升农民收入。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content-left" style="margin:0px;padding-top:20px;padding-bottom:20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center pt-4"> <img class="screen" src="images/p2_fruites/s4_QR.png" style="margin-top:30px;" width="200" alt="商家版下载二维码">
+                        <p class="pt-1" style="text-indent: 0em;margin-top:15px;"><strong>扫码下载果蔬e站商家版App</strong></p>
+                    </div>
+                    <div class="col-md-9 px-4"> <img class="screen full-width" src="images/p2_fruites/s4_login.png" alt="注册流程">
+                        <!-- <p>终端用户可以搜索并获得大量的本地服务商户</p> -->
+                    </div>
+                </div>
+            </div>
+            <!--EndFragment-->
+        </section>
+        <!-- FOOTER CENTER -->
+        <footer id="footer-dark" class="bg-color1 dark-bg">
+            <div class="container">
+                <div class="row" style="font-size:15px;padding-bottom:0px;">
+                    <div class="col-md-6 col-md-push-6" >
+                        <!--
+						<ul class="soc-list">
+							<li><a href="#" target="_blank">北京市海淀区复兴路甲38号嘉德公寓13层</a></li>
+							<li><a href="#" target="_blank">电话：<strong>(010)8821 0980</strong></a></li>
+							<li><a href="#" target="_blank">邮箱：<strong>sm_wen@126.com</strong></a></li>
+						</ul>
+--><span class="editContent">北京市海淀区复兴路甲38号嘉德公寓13层
+							<br>电话：<strong>(010)8821 0980 </strong> <strong>  </strong> <br>邮箱：<strong>lights@topgis.com.cn</strong>
+						</span> </div>
+                    <div class="col-md-6 col-md-pull-6"> <img class="logo" src="images/O2Osq+.png" alt=""> <span class="editContent">© 2017 Design by<br>北京光声新时空软件有限公司</span>
+                        <!-- <a href="http://multifour.com/" target="_blank">Multifour.com</a> --></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+        <!-- BENEFITS GRID NUM 2 BLOCK -->
+        <!-- MODALS BEGIN-->
+        <div class="modal fade" id="modalMessage" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="modal-title">&nbsp;</h3> </div>
+            </div>
+        </div>
+        <!-- MODALS END-->
+        <!-- JavaScript -->
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/less.min.js"></script>
+        <script src="scripts/tether.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/jquery.validate.min.js"></script>
+        <script src="scripts/smoothscroll.js"></script>
+        <script src="scripts/jquery.smooth-scroll.min.js"></script>
+        <script src="scripts/placeholders.jquery.min.js"></script>
+        <script src="scripts/jquery.magnific-popup.min.js"></script>
+        <script src="scripts/jquery.easings.min.js"></script>
+        <script src="scripts/jquery.counterup.min.js"></script>
+        <script src="scripts/waypoints.min.js"></script>
+        <script src="scripts/video.js"></script>
+        <script src="scripts/bigvideo.js"></script>
+        <script src="scripts/custom.js"></script>
+		<script src="scripts/clickintent.js"></script>
+        <script type="text/javascript">
+            $(function(){
+				$('.carousel').carousel({
+					pause: true
+					, interval: false
+				});
+			});
+            $(document).on("click touchend", ".clickToScroll", function () {
+                var $anchor = $(this);
+                console.log($($anchor.attr('href')));
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 800, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        </script>
+</body>
+
+</html>
