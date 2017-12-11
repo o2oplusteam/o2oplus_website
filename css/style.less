@@ -1,13 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Hind:600,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300);
 @import url("css/tinyScreen.css") screen and (max-device-width: 400px);
-@baseColor: #AF1B20; // dark red
-@secondColor: #1870B5; // sea blue
+//@baseColor: #AF1B20; // dark red
+//@secondColor: #1870B5; // sea blue
+@baseColor: #308CAA; // light blue
+@secondColor: #1B1752; // sea blue
 @thirdColor:#8ec214; // 
 @btnBg: #fff;
 @btnHover: #e6e6e6;
 @border: #adadad;
 @btn-link-enhance: #f16c3a;
+
+// Dark-Theme Color
+@dbText: #fff;
+@dbHighlightText: #00A2E1; // #00c1de;
+
+
 .vendor(@property,
 @value) {
     -webkit-@{property}: @value;
@@ -1403,6 +1411,16 @@ a.panel-heading.collapsed:after {
     }
     .navbar-collapse {
         margin-top: 1rem;
+        .bg-dark{
+            li.nav-item {
+                a.nav-link{
+                    color: #fff;
+                    &:hover{
+                        color: #00c1de;
+                    }
+                }
+            }
+        }
         li.nav-item {
             //a.nav-link {
             //    padding: .5rem 1rem;
