@@ -3,7 +3,7 @@
 @import url("css/tinyScreen.css") screen and (max-device-width: 400px);
 //@baseColor: #AF1B20; // dark red
 //@secondColor: #1870B5; // sea blue
-@baseColor: #308CAA; // light blue
+@baseColor: #00A2E1; // light blue
 @secondColor: #1B1752; // sea blue
 @thirdColor:#8ec214; // 
 @btnBg: #fff;
@@ -13,11 +13,12 @@
 
 // Dark-Theme Color
 @dbText: #fff;
-@dbHighlightText: #00A2E1; // #00c1de;
+@dbHighlightText: @baseColor; // #308CAA / #00c1de
+@dbLink: #fff;
+@dbLinkHover: fade(@baseColor, 80%); 
+@darkBg: #202229; 
 
-
-.vendor(@property,
-@value) {
+.vendor(@property, @value) {
     -webkit-@{property}: @value;
     -khtml-@{property}: @value;
     -moz-@{property}: @value;
@@ -36,7 +37,7 @@
 
 body {
     font-family: 'Hind', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: lighter;
     line-height: 1.5;
     color: #555;
@@ -49,7 +50,7 @@ body {
 
 section,
 header {
-    margin-top: 76px;
+//    margin-top: 76px;
     padding-top: 80px;
     padding-bottom: 50px;
     position: relative;
@@ -69,14 +70,17 @@ header {
 
 section.full-height {
     //min-height: 100vh;
-    padding-top: auto;
-    padding-bottom: auto;
+    padding-top: 8vh; //auto;
+    padding-bottom: 8vh; //auto;
     .container {
         .sideImg {
             img {
                 padding-top: 50px;
             }
         }
+    }
+    .container.narrowMargin{
+        
     }
 }
 
@@ -324,6 +328,9 @@ hr {
 }
 
 @media (max-width: 1200px) {
+    html, body{
+        font-size: 16px;
+    }
     section,
     header {
         padding-top: 1rem; // 70px;
@@ -338,6 +345,7 @@ hr {
 @media (max-width: 992px) {
     body {
         text-align: center;
+        font-size: 15px;
     }
     section,
     header,
@@ -390,6 +398,9 @@ hr {
 }
 
 @media (max-width: 767px) {
+    html, body{
+        font-size: 14px;
+    }
     .row [class^=col-sm-] {
         padding-bottom: 40px;
     }
@@ -399,11 +410,17 @@ hr {
 /*----------------------------------------------------------------------------------------
 						customer global style
 ----------------------------------------------------------------------------------------*/
-
+.text-center{
+    text-align: center;
+}
 .full-width {
     width: 100%;
 }
-
+.vertical-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /*----------------------------------------------------------------------------------------
 						roles-intro
@@ -573,14 +590,14 @@ hr {
             //	padding-top: .6rem;
             //}
             color: white;
-            font-size: 13px;
+            font-size: 1.4rem;
             margin: 0 10vw 6rem 10vw;
             background-color: transparent;
         }
         .desc-text {
             line-height: 150%;
             margin: .5rem 0 1rem 0;
-            font-size: 1rem;
+            font-size: 1.3rem;
             // text-align: justify;
             // direction: ltr;
             // unicode-bidi: embed;
@@ -1178,6 +1195,10 @@ a.read-more:hover {
     background-color: #f8f9fb;
 }
 
+.bg-color4 {
+    background-color: @darkBg;
+}
+
 .cover-bg,
 .fixed-bg,
 .pattern-bg,
@@ -1244,15 +1265,23 @@ h4.sub-title {
     color: #fff;
 }
 
-.big-title,
-.giant-title {
-    font-size: 1.5rem; // 20px;
+.big-title, .side-title {
+    font-size: 2rem; // 20px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
 .giant-title {
-    font-size: 110px;
+    font-size: 3rem;
+}
+.big-title {
+    font-size: 2.4rem;
+}
+.side-title, .sub-title {
+    font-size: 1.6rem;
+}
+h4.sub-title {
+   font-size: 1.2rem;
 }
 
 .big-title.zero-bottom,
@@ -1362,7 +1391,7 @@ a.panel-heading.collapsed:after {
 }
 
 .dark-bg .panel {
-    background-color: #202229;
+    background-color: @darkBg;
 }
 
 .dark-bg a.panel-heading:after {
@@ -1430,10 +1459,10 @@ a.panel-heading.collapsed:after {
             //    }
             //}
 			a.nav-link {
-                padding: .5rem .5rem;
-                font-weight: light;
-				font-size:.8em;
-				color:#333;
+                padding: .5rem .8rem; //.5rem;
+                font-weight: 500;
+				font-size: 1rem; // .8em;
+				color: #333;
                 &:hover {
                      background: none;
                 }
@@ -1441,12 +1470,25 @@ a.panel-heading.collapsed:after {
         }
         li.nav-item.active {
             a.nav-link {
-                color: fade(@baseColor, 90%);
+                color: saturate(@baseColor, 10%);
+//                color: fade(@baseColor, 90%);
                 &:hover {
                     color: @baseColor;
                 }
                 &:focus {
                     color: #00c0ff;
+                }
+            }
+        }
+        li.nav-item.dropdown{
+            .dropdown-menu.bg-dark{
+                top: 2.8rem;
+                
+                a.dropdown-item{
+                    color: @dbLink;
+                    &:hover{
+                        color: @dbLinkHover;
+                    }
                 }
             }
         }
@@ -1787,27 +1829,33 @@ a.panel-heading.collapsed:after {
 .item-list-right li,
 .item-list-left li {
     position: relative;
+    h3{
+        font-weight: bold;
+    }
+    p.small-text{
+        font-size: .8rem;
+    }
 }
 
 .item-list-right li {
-    padding: 0 75px 60px 45px;
+    padding: 0 4rem 3rem 2rem; // 0 75px 60px 45px;
     text-align: right;
 }
 
 .item-list-left li {
-    padding: 0 45px 60px 75px;
+    padding: 0 1rem 3rem 4rem; // 0 45px 60px 75px;
     text-align: left;
 }
 
 .item-list-center li {
-    padding: 0 40px 60px 40px;
+    padding: 0 2rem 3rem 1rem; // 0 40px 60px 40px;
     text-align: center;
 }
 
 .item-list-border li {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin-bottom: 30px;
+    padding: 1rem; //40px;
+    margin-bottom: .8rem; //30px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -2215,14 +2263,15 @@ nav.navbar-slide.show-menu {
 .intro-block {
     padding: 3rem 0 2rem 0;
     width: ~"calc(100vw)";
-    height: ~"calc(100vw * 0.35)";
+    height: ~"calc(100vw * 0.5)"; // .35
     .container {
         margin-top: 20vh;
     }
 }
 
 #intro-center {
-    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
 }
 
 .intro-block .logo {
@@ -2243,8 +2292,7 @@ nav.navbar-slide.show-menu {
     opacity: 0.7;
 }
 
-#big-video-wrap video,
-.vjs-control-bar {
+#big-video-wrap video, .vjs-control-bar {
     display: none;
 }
 
@@ -2269,13 +2317,14 @@ nav.navbar-slide.show-menu {
 #carouselExampleControls {
     //height: ~"calc(100vh - 78px)";
     width: ~"calc(100vw)";
-    height: ~"calc(100vw * 0.35)";
+    height: ~"calc(100vw * 0.5)"; // .35
     padding: 0;
     .carousel-inner {
         width: ~"calc(100vw)";
-        height: ~"calc(100vw * 0.35)";
+        height: ~"calc(100vw * 0.5)"; // .35
         .carousel-item {
             height: 100%;
+            background-position: center center;
             .carousel-caption {
                 height: 55%;
             }
@@ -2324,11 +2373,11 @@ nav.navbar-slide.show-menu {
 #carouselExampleControls-gs {
     //height: ~"calc(100vh - 78px)";
     width: ~"calc(100vw)";
-    height: ~"calc(100vw * 0.35)";
+    height: ~"calc(100vw * 0.5)"; // .35
     padding: 0;
     .carousel-inner-gs {
         width: ~"calc(100vw)";
-        height: ~"calc(100vw * 0.35)";
+        height: ~"calc(100vw * 0.5)"; // .35
         .carousel-item-gs {
             height: 100%;
             .carousel-caption {
@@ -2655,6 +2704,12 @@ nav.navbar-slide.show-menu {
 @media (min-width: 1200px) {
     .quote-block .carousel .container {
         width: 1140px;
+    }
+    .container.wide-container {
+        max-width: 1300px;
+        .item-two-side{
+            font-size: .8rem;
+        }
     }
 }
 
@@ -3153,7 +3208,7 @@ aside.blog-sidebar .recent-posts .post-info>div {
 }
 
 .dark-bg .post {
-    background-color: #202229;
+    background-color: @darkBg;
 }
 
 
