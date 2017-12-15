@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Hind:600,300);
+﻿@import url(http://fonts.googleapis.com/css?family=Hind:600,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300);
 
 /*----------------------------------------------------------------------------------------
@@ -138,6 +138,9 @@ body {
 
 .example_div{
 	width:24%;border:1px #ddd solid;float:left;margin:0 1% 10px 0;text-align:center;
+}
+.example_div_noimg{
+	width:48%;border:1px #ddd solid;float:left;margin:0 1% 10px 0;text-align:center;
 }
 
 

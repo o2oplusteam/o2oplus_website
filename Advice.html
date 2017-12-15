@@ -31,7 +31,21 @@
         div#content{
             margin: 0 0 0 5%;
         }
-		
+		.title_left{
+			width:30%;text-align:right;height:5rem;line-height:5rem;
+		}
+		.title_right{
+			width:70%; height:5rem;padding:1rem;
+		}
+		.input_right{
+			width:40%;height:3rem;border:1px #ddd solid;
+		}
+		.textarea_td{
+			width:70%;height:5rem;padding:1rem;
+		}
+		.textarea_right{
+			width:40%;height:6rem;border:1px #ddd solid;
+		}
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -58,95 +72,65 @@
 				<tr>
 					<td colspan="4">
 					<div class="small_fang"></div>
-					<span class="title_span">购买流程</span>
+					<span class="title_span">行业解决方案咨询表单</span>
 					<td>
 				</tr>
 				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
 				<tr>
 					<td colspan="4">
-						<div style="padding:1rem;color:black;width:100%;height:5rem;font-size:0.8rem;line-height:1rem;background-color:#dafafa;">
-							<span>温馨提示：
-							<br>1、您购买的解决方案为按量付费产品，实际扣费以账单为准（由于库存不足等原因导致的创建失败可能产生小额费用）。
-							<br>2、您的帐号需要有超过100元的现金、可用信用额度或者可用于开通产品的代金券。
-							</span>
+						<div style="color:black;width:100%;height:2rem;font-size:0.8rem;line-height:2rem;border:1px #aff solid;background-color:#dff;">
+							&nbsp;&nbsp;建议信息填写尽可能真实，以便于后期业务交流
 						</div>
 					</td>
 				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
 				<tr>
-					<td colspan="4">
-						<div style="padding-left:1rem;color:black;width:100%;height:2rem;font-size:0.8rem;line-height:2rem;background-color:#eaeaea;">
-							<span>基本信息
-							</span>
-						</div>
-						<div style="padding-left:1rem;color:darkgray;width:100%;height:14rem;font-size:0.8rem;line-height:2rem;background-color:#fafafa;">
-							<span>服务器：1年使用权限
-							<br>APP客户端：1.0版本
-							<br>APP商户端：1.0版本
-							<br>微信公众号：1.0版本
-							<br>运营维护：1年
-							<br>网站：1.0版本
-							<br>技术支持服务：1年
-							</span>
-						</div>
+					<td class="title_left">
+						<span style="color:red;">*</span>姓名：
+					</td>
+					<td <td class="title_right">
+						<input id="name" type="text" class="input_right"></input>
 					</td>
 				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td class="title_left">
+						<span style="color:red;">*</span>手机号：
+					</td>
+					<td <td class="title_right">
+						<input id="n_tel" type="text" class="input_right"></input>
+					</td>
+				</tr>
+				<tr>
+					<td class="title_left">
+						<span style="color:red;">*</span>您所属行业：
+					</td>
+					<td class="title_right">
+						<input id="hangye" type="text" class="input_right"></input>
+					</td>
+				</tr>
+				<tr>
+					<td class="title_left">
+						<span style="color:red;">*</span>问题咨询：
+					</td>
+					<td class="textarea_td">
+						<textarea id="question" type="text" class="textarea_right"></textarea>
+					</td>
+				</tr>
 				
 				<tr>
-					<td colspan="4">
-						<div align="center" style="width:100%;">
-							<div style="float:left;text-align:center;width:20%;height:230px;margin-right:5%;">
-								<div style="width:100%;height:200px;background:#aef;">
-								</div>
-								<span>步骤 1
-								</span>
-							</div>
-							<div style="float:left;text-align:center;width:20%;height:230px;margin-right:5%;">
-								<div style="width:100%;height:200px;background:#aef;">
-								</div>
-								<span>步骤 2
-								</span>
-							</div>
-							<div style="float:left;text-align:center;width:20%;height:230px;margin-right:5%;">
-								<div style="width:100%;height:200px;background:#aef;">
-								</div>
-								<span>步骤 3
-								</span>
-							</div>
-							<div style="float:left;text-align:center;width:20%;height:230px;margin-right:5%;">
-								<div style="width:100%;height:200px;background:#aef;">
-								</div>
-								<span>步骤 4
-								</span>
-							</div>
-							<div style="float:left;text-align:center;width:20%;height:230px;margin-right:5%;">
-								<div style="width:100%;height:200px;background:#aef;">
-								</div>
-								<span>步骤 5
-								</span>
-							</div>
-						</div>
+					<td class="title_left">
 					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				
-				<tr>
-					<td colspan="4">
-						<div align="center" style="width:100%;height:40px;">
-							<div style="width:110px;height:30px;line-height:30px;text-align:center;background-color:#0ae;color:white;">
-							<a href="Advice.html">售前咨询</a>
-							</div>
-						</div>
+					<td class="title_right">
+						<div onclick="submitClick();" style="background-color:#0ae;color:white;font-size:1rem;line-height:2rem;padding:0 2rem;width:6rem;">提交</div>
 					</td>
 				</tr>
 			</table>
 	   </div>
 	   
 	   
-	   <div id="footer_div">
+	   
+	   
+	    <div id="footer_div">
 	   </div>
-	    
 	
 	
         <!-- MODALS END-->
@@ -176,9 +160,82 @@
 			}
 			var adviceType = getQueryString("index");// 2 咨询类型   3 建议类型
 			var width = window.screen.width;
+			if(width<=500){
+				$("#bg_div").css({"padding":"20px 5%"});
+				$(".textarea_right").css({"height":"4rem","width":"80%"});
+				$(".input_right").css({"height":"2rem","width":"80%"});
+				$(".title_right").css({"height":"3rem","padding":"0.5rem"});
+				$(".textarea_td").css({"height":"3rem","padding":"0.5rem"});
+				$(".title_left").css({"height":"3rem","line-height":"3rem"});
+			}
+			
+			
 		
-			$('#navContainer').load('html/nav_hcl.html');
+			function submitClick(){
+				var question = document.getElementById("question").value;
+				var n_tel = document.getElementById("n_tel").value;
+				var name = document.getElementById("name").value;
+				var hangye = document.getElementById("hangye").value;
+				if(name.length==0){
+					alert("请您先填写您的姓名");return;
+				}else if(hangye.length==0){
+					alert("请您先填写您的所属行业");return;
+				}else if(question==null || question.length==0){
+					alert("请您先填写您想要咨询的问题");return;
+				}else if(n_tel.length==0){
+					alert("请您先填写您的手机号");return;
+				} 
+				var params = "String@"+escape(question)+",String@"+escape(n_tel)+",String@3"+",String@"+escape(name)+",String@"+escape(hangye)+",String@";
+				var index = 1;
+				$.ajax({
+					type: "POST",
+					url: "http://www.o2oplus.com.cn/o2osq/MobileCommonServlet?method=submitAdvice",
+					data: {"type":"json","params":params},
+					async: true,
+					jsonp:"callbackparam",
+					success: function(msg){ 
+						if(msg.indexOf("true")!=-1){
+							alert("数据提交成功");
+						}else if(msg.indexOf("false")!=-1){
+							alert("数据提交失败，请稍后再试");
+						}
+					},complete:function(dd){
+						
+					},error:function(msg){
+						
+					}
+				});
+				/*params = "String@"+escape(content)+"";
+				$.ajax({
+					type: "POST",
+					url: "http://122.122.200.19:8888/gsmobile/MobileCommonServlet?method=submitStr",
+					data: {"type":"jsonp","params":params},
+					async: true,
+					jsonp:"callbackparam",
+					back:"successCallBack",
+					success: function(data){ 
+						alert("success - "+data);
+					},complete:function(dd){
+						alert("complete - "+dd);
+					},error:function(msg){
+						alert("error - "+msg);
+						for(pp in msg){
+							//alert(pp+" - "+msg[pp]);
+						}
+					}
+				});*/
+			}
 			$('#footer_div').load('html/footer.html');
+			$('#navContainer').load('html/nav_hcl.html');
+			$(function() {
+				$('.carousel').carousel({
+					pause: true,
+					interval: false
+				});
+            
+				// loads the .html in the #navContainer
+				$('#navContainer').load('html/nav.html');
+			});
 			
             $(document).on("click touchend", ".clickToScroll", function () {
                 var $anchor = $(this);
