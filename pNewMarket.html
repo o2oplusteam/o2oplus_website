@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="360-site-verification" content="962e70e172261fef5072e2145260d73f" />
+
+    <meta name="keywords" content="O2O商圈新零售电商平台，助力传统商户快速转型新零售建 新零售 新零售转型 新零售电商 本地生活服务 O2O 移动电商 超市便利店新零售 生鲜新零售 果蔬新零售 智慧餐厅 手机点餐 外卖 智慧商城 租房APP 本地美食 本地新闻 本地兼职招聘 APP开发 智慧城市应用快速搭建 物联网应用快速搭建 移动政务应用快速搭建 微信开发 微信运营 网站开发 网站设计 网站运营">
+    <meta name="description" content="O2O商圈是国内首款面向商家完全免费的新零售超级APP移动电商平台，平台采用全球领先的新零售超级APP引擎，为国内上千万中小实体商户或连锁商家提供快速转型新零售而搭建的本地生活服务移动电商平台">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O2O商圈新零售移动电商平台</title>
+    <!--pageMeta-->
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Elements Styles -->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <!-- Loading Magnific-Popup Styles -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- Loading Font Styles -->
+    <link href="css/iconfont-style.css" rel="stylesheet">
+	<!-- advice styles-->
+	<link href="css/style_public.css" rel="stylesheet"> 	
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="scripts/html5shiv.js"></script>
+      <script src="scripts/respond.min.js"></script>
+    <![endif]-->
+    <!--headerIncludes-->
+</head>
+
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.o2oplus.com.cn"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/518756f643fa54f255b87dc48d122f89/?size=74x27"/></a>
+
+<script>
+    (function() {
+        var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?f8364fea8380e4ce6664b0c0fa29f624" : "https://jspassport.ssl.qhimg.com/11.0.1.js?f8364fea8380e4ce6664b0c0fa29f624";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+
+</script>
+
+<body data-spy="scroll" data-target=".navMenuCollapse">
+    <div id="wrap">
+       <div id="navContainer">
+            <!--  nav bar will load from /html/nav.html   -->
+       </div>
+        <div style=" position: fixed;right: 0;top:90%;z-index:400">
+            <img src="images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
+        </div>
+		
+		<div id="video_div" style="z-index:1001;display:none;position:fixed;width:100%;height:100%;background-color:rgba(44,44,44,0.8);">
+			
+			<div style="width:80%;height:70%;margin:10%;">
+				<video width="100%" height="100%" controls autostart="true" loop="true">
+					<source src="http://122.122.200.19:8888/gsmobile/FormerImage/1122.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div onclick="videoClick(2);" style="position:fixed;right:10%;top:10%;width:70px;height:25px;background:#fff;text-align:center;">关闭</div>
+		</div>
+		
+		<div style="width:100%;height:45px;"></div>
+        <!-- INTRO CENTER -->
+        <div style="width:100%;height:320px;background-color:#024;padding:30px 10%;">
+			<div style="width:55%;float:left;">
+			<span style="color:white;font-size:28px;font-weight:bold;">新零售解决方案</span><br><br>
+			<span style="color:white;font-size:0.9rem;">结合大数据能力帮助新零售企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景</span>
+			<br><br>
+			<div style="margin:0px 10px 0 0px;float:left;width:150px;height:35px;line-height:35px;background:#0ae;color:white;text-align:center;">架构师咨询</div>
+			<div style="margin:0px 10px 0 10px;float:left;width:180px;height:35px;line-height:35px;border:1px #fff solid;color:white;text-align:center;">电商API数据接口</div>
+			</div>
+			<div style="float:right;margin:90px 20% 0px 0px;">
+				<img onclick="videoClick(1);" src="images/newMarket/playVideo.png" width="50px" />
+			</div>
+		</div>
+		
+		<div style="width:100%;padding:30px 10%;">
+			<table style="width:100%;">
+				<tr>
+					<td colspan="4">
+					<div class="small_fang"></div>
+					<span class="title_span">新零售热门业务场景</span>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td class="view_td">
+						<div class="view_bg_all" style="background-image:url(images/newMarket/view_bg1.png);">
+							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="view_bg_all" class="hidden_dark_div">
+								<div class="view_center_img"><img width="100%" src="images/newMarket/view_center1.png" /></div>
+								<div class="view_white_line"></div>
+								<div class="view_center_title">电商网站安全防护</div>
+							</div>
+						</div>
+					</td>
+					<td class="view_td">
+						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_top.png);">
+							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_top.png" /></div>
+								<div class="view_white_line"></div>
+								<div class="view_center_title">数据可视化展示大屏</div>
+							</div>
+						</div>
+						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_bottom.png);">
+							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_bottom.png" /></div>
+								<div class="view_white_line"></div>
+								<div class="view_center_title">短信通知和推广</div>
+							</div>
+						</div>
+					</td>
+					<td class="view_td">
+						<div class="view_bg_all" style="background-image:url(images/newMarket/view_bg3.png);">
+							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+								<div class="view_center_img"><img width="100%" src="images/newMarket/view_center3.png" /></div>
+								<div class="view_white_line"></div>
+								<div class="view_center_title">快速搭建电商平台</div>
+							</div>
+						</div>
+					</td>
+					<td class="view_td">
+						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_top.png);">
+							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_top.png" /></div>
+								<div class="view_white_line"></div>
+								<div class="view_center_title">个性化推荐</div>
+							</div>
+						</div>
+						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_bottom.png);">
+							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_bottom.png" /></div>
+								<div class="view_white_line"></div>
+								<div class="view_center_title">支持营销功能的电商平台</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+					<div class="small_fang"></div>
+					<span class="title_span">新零售解决方案全景图</span>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+						<div class="allimg_bg" style="height:180px;">
+							<div class="allimg_left">&nbsp;<br>&nbsp;<br>业<br>务<br>层
+							</div>
+							<div class="allimg_right">
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">全渠道融合</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">云POS</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">大数据运营</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">视频直播</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">个性化推荐</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">以图搜图</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">智能语音</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">客服机器人</div>
+							</div>
+						</div>
+						<div class="allimg_bg" style="height:110px;">
+							<div class="allimg_left">&nbsp;<br>技<br>术<br>层
+							</div>
+							<div class="allimg_right">
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">小型电商</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">中型电商</div>
+								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">全站HTTPS</div>
+							</div>
+						</div>
+						<div class="allimg_bg">
+							<div class="allimg_left" style="border-bottom:#ddd 1px solid;">&nbsp;<br>产<br>品<br>层
+							</div>
+							<div class="allimg_right" style="border-bottom:#ddd 1px solid;padding-top:45px;text-align:left;">
+								<div style="float:left;width:50px;height:50px;background-color:gray;margin:0 15px 0 10px;"></div>
+								<span style="float:left;">云服务器ECS是一种简单高效、处理能力可弹性伸缩的计算服务，帮助
+								<br>您快速构建更稳定、安全的应用，提升运维效率
+								</span>
+								<div style="float:right;width:50px;height:50px;background-color:gray;margin:0 10px;"></div>
+								<div style="float:right;width:50px;height:50px;background-color:gray;margin:0 10px;"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+					<div class="small_fang"></div>
+					<span class="title_span">新零售上云两大模式</span>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+						<div style="width:100%;">
+						<div class="model_left_div">
+							<div align="center" class="model_line_gray">
+								<div>
+									<img width="40px" src="images/newMarket/mode_left.png" />
+									零售公共云
+								</div>
+							</div>
+							<div class="model_line_white">
+								围绕人们日常的衣食住行，无论是互联网电商企业，还是传统零售企业，都开始使用云计算和大数据技术来提升客户体验， 提高营销效率，降低企业运营成本。零售公有云使用以下技术为企业“新零售”赋能。包括： 
+							</div>
+							<div class="model_line_white">
+								<div style="float:left;width:50%;margin-right:5%;">短时间内提供海量弹性计算资源，满足企业大促需求提升使用企业互联网化架构对零售企业传统IT架构进行化服务化改造赋能云生态isv，为企业提供各类零售场景下的Saas服务</div>
+								<div style="float:left;width:45%;">零售企业现有平台的云化部署，移动化改造，安全性，使用大数据、人工智能技术推动零售企业转型升级</div>
+							</div>
+						</div>
+						<div class="model_right_div">
+							<div align="center" class="model_line_gray" style="height:70px;">
+								<div>
+									<img width="35px" src="images/newMarket/mode_right.png" />
+									零售专有云
+								</div>
+							</div>
+							<div class="model_line_white"style="height:110px;">
+								结合光声新时空商业体系的能力与云计算能力，提供数据推送、链路稳定性保障、弹性扩展、数据交换、数据融合与挖掘，以及门店数字化等多种服务。
+							</div>
+							<div class="model_line_white" >
+								对接淘宝开放平台数据与技术能力，为双十一大促提供稳定性保障服务提供高可用的云计算产品，压测工具和全链路监控服务提供智能设备的门店收银、导购、客流分析及线上线下店铺一体化 
+							</div>
+						</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+					<div class="small_fang"></div>
+					<span class="title_span">官方热门解决方案</span>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+						<div onclick="solutionClick(1);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div">
+							<div class="method_line_gray">
+								<span style="font-size:17px;font-weight:bold;">小型电商</span>
+								<br><span>适合初创电商公司快速搭建平台</span>
+							</div>
+							<div align="center" class="method_line_white">
+								<div class="method_center">
+									<div class="method_center_div">
+									<span>访问量<br></span>
+									<span style="font-size:11px;color:black;">100-200/天</span>
+									</div>
+									<div class="method_center_div">
+									<span>成交量<br></span>
+									<span style="font-size:11px;color:black;">3单/天</span>
+									</div>
+									<div class="method_center_div">
+									<span>安全防护<br></span>
+									<span style="font-size:11px;color:black;">全天防护</span>
+									</div>
+								</div>
+								<img width="70%" src="images/newMarket/method_1.jpg" style="border:1px #ddd solid;"/>
+								<br><span style="font-size:20px;color:#f0f;">￥529/月</span>
+								<div class="detail_button">查看详情</div>
+							</div>
+						</div>
+						<div onclick="solutionClick(2);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div" style="margin:0 2%;">
+							<div class="method_line_gray">
+								<span style="font-size:17px;font-weight:bold;">中型电商</span>
+								<br><span>适合快速发展的公司搭建电商平台</span>
+							</div>
+							<div align="center" class="method_line_white">
+								<div class="method_center">
+									<div class="method_center_div">
+									<span>访问量<br></span>
+									<span style="font-size:11px;color:black;">200-300/天</span>
+									</div>
+									<div class="method_center_div">
+									<span>成交量<br></span>
+									<span style="font-size:11px;color:black;">5单/天</span>
+									</div>
+									<div class="method_center_div">
+									<span>安全防护<br></span>
+									<span style="font-size:11px;color:black;">全天防护</span>
+									</div>
+								</div>
+								<img width="70%" src="images/newMarket/method_2.jpg" style="border:1px #ddd solid;"/>
+								<br><span style="font-size:20px;color:#f0f;">￥1029/月</span>
+								<div class="detail_button">查看详情</div>
+							</div>
+						</div>
+						<div onclick="solutionClick(3);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div">
+							<div class="method_line_gray">
+								<span style="font-size:17px;font-weight:bold;">电商视频直播</span>
+								<br><span>针对电商量身定制的营销方案</span>
+							</div>
+							<div align="center" class="method_line_white">
+								<div class="method_center">
+									<div class="method_center_div">
+									<span>日活<br></span>
+									<span style="font-size:11px;color:black;">10万</span>
+									</div>
+									<div class="method_center_div">
+									<span>并发<br></span>
+									<span style="font-size:11px;color:black;">2万</span>
+									</div>
+									<div class="method_center_div">
+									<span>秒开<br></span>
+									<span style="font-size:11px;color:black;">1-5秒</span>
+									</div>
+								</div>
+								<img width="70%" src="images/newMarket/method_3.jpg" style="border:1px #ddd solid;"/>
+								<br><span style="font-size:20px;color:#f0f;">￥0/月</span>
+								<div class="detail_button">查看详情</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+					<div class="small_fang"></div>
+					<span class="title_span">客户案例</span>
+					</td>
+				</tr>
+				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
+				<tr>
+					<td colspan="4">
+					<div onclick="exampleDetail('ljx');" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div">
+						<div style="margin:15% 35% 5%;width:30%;">
+						<img width="100%" src="images/newMarket/example_ljx.png" />
+						</div>
+						<span style="font-size:18px;font-weight:bold;">
+							绿箭侠</span><br><span>绿箭侠超市手机下单购物平台
+						</span>
+					</div>
+					<div onclick="exampleDetail('gsez');" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div">
+						<div style="margin:15% 35% 5%;width:30%;">
+						<img width="100%" src="images/newMarket/example_gsez.png" />
+						</div>
+						<span style="color:black;font-size:20px;font-weight:bold;">
+							果蔬e站</span><br><span>地铁口手机下单果蔬购买平台
+						</span>
+					</div>
+					<div onclick="exampleDetail('xzzm');" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div">
+						<div style="margin:15% 35% 5%;width:30%;">
+						<img width="100%" src="images/newMarket/example_xzzm.png" />
+						</div>
+						<span style="color:black;font-size:20px;font-weight:bold;">
+							西藏之门</span><br><span>西藏特产手机下单购买平台
+						</span>
+					</div>
+					<div onclick="exampleDetail('o2osq');" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div">
+						<div style="margin:15% 35% 5%;width:30%;">
+						<img width="100%" src="images/newMarket/example_o2osq.png" />
+						</div>
+						<span style="color:black;font-size:20px;font-weight:bold;">
+							O2O商圈</span><br><span>O2O本地生活购物平台
+						</span>
+					</div>
+					<div onclick="exampleDetail('oyh');" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div">
+						<div style="margin:15% 35% 5%;width:30%;">
+						<img width="100%" src="images/newMarket/example_oyh.png" />
+						</div>
+						<span style="color:black;font-size:20px;font-weight:bold;">
+							O洋行</span><br><span>海外名牌购物平台
+						</span>
+					</div>
+					<div onclick="exampleDetail('zf');" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div">
+						<div style="margin:15% 35% 5%;width:30%;">
+						<img width="100%" src="images/newMarket/example_zf.png" />
+						</div>
+						<span style="color:black;font-size:20px;font-weight:bold;">
+							留学生租房</span><br><span>留学生海外租房服务平台
+						</span>
+					</div>
+					</td>
+				</tr>
+				</table>
+		</div>
+
+
+		
+    <!-- BENEFITS GRID NUM 2 BLOCK -->
+    <!-- MODALS BEGIN-->
+    <div class="modal fade" id="modalMessage" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title">&nbsp;</h3>
+            </div>
+        </div>
+    </div>
+    <!-- MODALS END-->
+
+		<div onmouseover="showZixun(1);" onmouseout="showZixun(2);" class="zixun_bg">
+			<div align="center"  class="show_zixun">
+				<div class="show_zixun_img">
+					<img width="100%" src="images/advice/advice.png" />
+				</div>
+				<span class="shw_zixun_span">
+				咨询<br>&<br>建议
+				</span>
+			</div>
+			<div id="zixun" class="zixun_hidden_div">
+				<div onclick="zixunClick(1);" class="zixun_hidden_line">
+					<div class="zixun_hidden_line_img"><img width="100%" src="images/advice/tel.png" /></div>
+					<div class="zixun_hidden_line_right">
+						<span class="zixun_hidden_line_title">售前咨询电话</span><br>
+						<span class="zixun_hidden_line_tel">010-88210980</span>
+					</div>
+				</div>
+				<div class="zixun_hidden_line">
+					<a href="Advice.html?index=2"/>
+					<div class="zixun_hidden_line_img"><img width="100%" src="images/advice/tell.png" /></div>
+					<div class="zixun_hidden_line_right">
+						<span class="zixun_hidden_line_title">购买咨询服务</span><br>
+						<span class="zixun_hidden_line_content">提交咨询信息，我们第一时间给您回复</span>
+					</div>
+				</div>
+				<div class="zixun_hidden_line">
+					<a href="Advice.html?index=3"/>
+					<div class="zixun_hidden_line_img"><img width="100%" src="images/advice/write.png" /></div>
+					<div class="zixun_hidden_line_right">
+						<span class="zixun_hidden_line_title">聆听.建议反馈</span><br>
+						<span class="zixun_hidden_line_content">光声不是完美的，我们渴望您的建议</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	               <div data-spm="175422" data-moduleid="196565" data-name="aliyun-solution-assets-footer" data-guid="175422" id="guid-175422" data-scene-id="196592" data-scene-version="3" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-solution-assets-footer J_Module" tms="aliyun-solution-assets-footer/0.0.16" tms-datakey="tce/196592"><div class="module-wrap J_tb_lazyload">
+  <script>
+    window.topMenu = [{"link":"http://media.aliyun.com/","isTrade":"true","text":"多媒体云","key":"duomeiti"},{"link":"http://www.aliyun.com/solution/game","isTrade":"true","text":"游戏云","key":"game"},{"link":"http://healthcare.aliyun.com/","isTrade":"true","text":"医疗云","key":"hcc"},{"link":"http://rendering.aliyun.com/","isTrade":"true","text":"渲染云","key":"arc"},{"link":"http://www.aliyun.com/solution/finance","isTrade":"true","text":"金融云","key":"afc"},{"link":"http://www.aliyun.com/solution/ecommerce","isTrade":"true","text":"电商云","key":"aec"},{"link":"http://govcloud.aliyun.com/","isTrade":"true","text":"政务云","key":"agc"},{"link":"http://www.aliyun.com/solution/web","isTrade":"false","text":"网站","key":"aic"},{"link":"http://www.aliyun.com/solution/security/","isTrade":"false","text":"安全","key":"asc"},{"link":"http://www.aliyun.com/solution/iot/","isTrade":"true","text":"物联网","key":"iot"},{"link":"http://www.aliyun.com/solution/o2o/","isTrade":"true","text":"O2O","key":"o2o"},{"link":"http://media.aliyun.com/","isTrade":"false","text":"云存储","key":"storage"},{"link":"http://media.aliyun.com/","isTrade":"false","text":"移动APP","key":"awc"}];
+    window.solution_menubar = [{"li2":[],"li1":[{"p":"降低运维难度和IT成本，保障网站安全性和稳定性","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/web","h2":"网站解决方案","key":"web"},{"p":"解决业务爆发式增长,复杂的移动安全挑战等问题","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/app","h2":"移动APP解决方案","key":"app"},{"p":"全栈云架构, 数据化+自动化运维和运营","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/dedicatedcloud","h2":"专有云解决方案","key":"dedicatedcloud"}],"text":"通用解决方案","key":"tongyong"},{"li2":[{"p":"强大的多媒体处理能力，提供海量存储、高效分发","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/media","h2":"多媒体解决方案","key":"media"},{"p":"成熟的商业化云服务,助力中小型游戏企业快速成长","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/game","h2":"游戏解决方案","key":"game"},{"p":"构筑开放共享、敏捷高效,安全可信的政务云基础架构","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/govcloud","h2":"政务解决方案","key":"govcloud"},{"p":"安全稳定、全网互通,大数据分析，共建物联网生态","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/iot","h2":"物联网解决方案","key":"iot"},{"p":"快速搭建海量基因数据上传，存储到分析挖掘的一体化","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/genomics","h2":"生物基因解决方案","key":"genomics"}],"li1":[{"p":"云端商业，数据梦想，快速搭建平台，助力电商企业实现","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/ecommerce","h2":"电商解决方案","key":"ecommerce"},{"p":"高弹性、高可用、安全合规，助推金融业务创新","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/finance","h2":"金融解决方案","key":"finance"},{"p":"集合传统医疗优势，致力构建智能医疗云生态","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/healthcare","h2":"医疗解决方案","key":"healthcare"},{"p":"整合视觉行业生态的力量，提供多层次渲染服务","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/rendering","h2":"渲染解决方案","key":"rendering"},{"p":"结合各类O2O场景，提供并发支撑与海量数据采集分析","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/o2o","h2":"O2O解决方案","key":"o2o"},{"p":"专业化云端业务与技术，快速搭建标准或定制化平台","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/energy","h2":"能源云解决方案","key":"energy"}],"text":"行业解决方案","key":"hangye"},{"li1":[{"p":"多层防护+云端大数据，提供整套安全产品和服务","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/security","h2":"安全解决方案","key":"security"},{"p":"解决海量数据存档/备份、加工，加速分发、挖掘分析、监控等","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/storage","h2":"云存储解决方案","key":"storage"},{"p":"确保数据不丢失，保证恢复，时间远小于数据中心或物理设备","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/recovery","h2":"中小型应用容灾方案","key":"recovery"},{"p":"经历阿里巴巴电商考验，助企业快速构建分布式应用","or":"true","tce_rule_count":"1","link":"https://www.aliyun.com/solution/middleware","h2":"企业级互联网架构方案","key":"middleware"}],"text":"专项解决方案","key":"zhuanxiang"}];
+  </script>
+  <script src="p5_MobileGovernment/videox-pc.js.下载"></script>
+
+  <link type="text/css" rel="stylesheet" href="p5_MobileGovernment/common.css">
+  <script type="text/javascript" src="p5_MobileGovernment/saved_resource(23)"></script>
+  <script type="text/javascript" src="p5_MobileGovernment/saved_resource(24)"></script>
+  <!-- exported styles -->
+
+
+<link rel="stylesheet" type="text/css" href="p5_MobileGovernment/saved_resource(25)">
+
+
+
+
+  
+      
+  <!--region -->
+            
+                
+                <div data-spm="631162" data-moduleid="199757" data-name="aliyun-common-footer-2017" data-guid="631162" id="guid-631162" data-scene-id="753070" data-scene-version="8" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-common-footer-2017 J_Module" tms="aliyun-common-footer-2017/0.0.72" tms-datakey="tce/753070">
+
+<div class="module-wrap J_tb_lazyload dbl_tms_module_wrap">
+  <!-- 避免用window的全局变量获取数据 -->
+  <textarea class="schemaData" style="display:none;">    {"moduleinfo":{"link95187_count":[{"count_phone":1,"count":1}],"inter_count":[{"count_phone":4,"count":4}],"keys_count":[{"count_phone":3,"count":3}],"js":"//g.alicdn.com/??aliyun/www-products/0.4.8/knight/js/footer/pinyou.js,aliyun/www-products/0.4.12/knight/js/footer/partner.js","xiaoyun_count":[{"count_phone":0,"count":0}],"qrcode_count":[{"count_phone":5,"count":5}]},"link95187":[{"p":"95187转1","imgW":"https://img.alicdn.com/tps/TB14DpcPXXXXXaIXpXXXXXXXXXX-100-82.png","imgG":"https://img.alicdn.com/tps/TB14DpcPXXXXXaIXpXXXXXXXXXX-100-82.png","h1":"售前咨询热线","links":[{"tce_rule_count":"1","link":"https://www.aliyun.com/support/95187","text":"专业技术咨询"},{"tce_rule_count":"1","link":"https://www.aliyun.com/support/95187","text":"全方位产品解读"},{"tce_rule_count":"1","link":"https://www.aliyun.com/solution/all","text":"成熟解决方案"},{"tce_rule_count":"1","link":"https://www.aliyun.com/solution/all","text":"成功客户案例分享"}],"imgB":"https://img.alicdn.com/tps/TB1_I0aPXXXXXajXpXXXXXXXXXX-100-82.png"}],"xiaoyun":[],"inter":[{"links":[{"tce_rule_count":"1","link":"https://www.aliyun.com/support/95187","text":"售前咨询"},{"tce_rule_count":"1","link":"https://www.aliyun.com/support/sqfwzx","text":"阿里云授权服务中心"},{"tce_rule_count":"1","link":"https://www.aliyun.com/support/quyu","text":"区域服务"},{"tce_rule_count":"1","link":"//help.aliyun.com/contact/contact.htm","text":"联系客服"},{"tce_rule_count":"1","link":"//help.aliyun.com/contact/school.htm","text":"新手学堂"},{"tce_rule_count":"1","link":"https://edu.aliyun.com/","text":"阿里云大学"},{"tce_rule_count":"1","link":"//help.aliyun.com/noticelist.html","text":"公告"},{"tce_rule_count":"1","link":"https://security.aliyun.com/trust","text":"信任中心"},{"tce_rule_count":"1","link":"//report.aliyun.com","text":"举报中心"}],"title":"服务与支持"},{"links":[{"tce_rule_count":"1","link":"//help.aliyun.com/knowledge_list/8314758.html","text":"登录常见问题"},{"tce_rule_count":"1","link":"//help.aliyun.com/knowledge_detail/5975134.html","text":"充值付款"},{"tce_rule_count":"1","link":"//help.aliyun.com/knowledge_detail/5974879.html","text":"线下汇款 / 电汇"},{"tce_rule_count":"1","link":"//help.aliyun.com/knowledge_detail/5975145.html","text":"合同申请"},{"tce_rule_count":"1","link":"//help.aliyun.com/knowledge_detail/5975160.html","text":"索取发票"}],"title":"账号与支持"},{"links":[{"tce_rule_count":"1","link":"//home.console.aliyun.com/","text":"管理控制台"},{"tce_rule_count":"1","link":"//bsn.console.aliyun.com/","text":"备案管理"},{"tce_rule_count":"1","link":"//account.console.aliyun.com/","text":"账号管理"},{"tce_rule_count":"1","link":"//whois.aliyun.com/","text":"域名信息查询（WHOIS）"},{"tce_rule_count":"1","link":"//dc.aliyun.com/login/loginx","text":"域名控制台"},{"tce_rule_count":"1","link":"//cp.hichina.com/login","text":"万网主机控制面板"},{"tce_rule_count":"1","link":"http://iconfont.cn/plus/user/detail?uid=41718","text":"产品图标"}],"title":"快速入口"},{"links":[{"tce_rule_count":"1","link":"https://www.aliyun.com/price","text":"定价"},{"tce_rule_count":"1","link":"//www.aliyun.com/customer/","text":"客户案例"},{"tce_rule_count":"1","link":"https://www.aliyun.com/product/newedtion","text":"新产品发布台"},{"tce_rule_count":"1","link":"https://www.aliyun.com/chinaglobal/home","text":"海外上云"},{"tce_rule_count":"1","link":"https://yq.aliyun.com/articles","text":"博客"},{"tce_rule_count":"1","link":"https://yq.aliyun.com/roundtable","text":"社区话题"},{"tce_rule_count":"1","link":"https://bbs.aliyun.com/thread/239.html","text":"云教程"},{"tce_rule_count":"1","link":"https://bbs.aliyun.com/thread/229.html","text":"开发者交流"},{"tce_rule_count":"1","link":"https://connect.aliyun.com/","text":"提交建议"}],"title":"其他"}],"qrcode":[{"qrcode":"https://img.alicdn.com/tfs/TB19l4NQpXXXXXnXpXXXXXXXXXX-80-80.png","link":"javascript:;","text":"企业决策必读"},{"qrcode":"https://img.alicdn.com/tps/TB197yLLpXXXXciXpXXXXXXXXXX-300-300.png","link":"https://promotion.aliyun.com/ntms/mobile.html","text":"阿里云APP"},{"qrcode":"//img.alicdn.com/tps/TB12GsJLXXXXXcWXpXXXXXXXXXX-84-84.png","link":"javascript:;","text":"阿里云微信"},{"qrcode":"//img.alicdn.com/tps/TB1zE3rLXXXXXXsaXXXXXXXXXXX-84-84.png","link":"http://weibo.com/aliyun?sudaref=www.aliyun.com","text":"阿里云微博"},{"qrcode":"https://img.alicdn.com/tfs/TB1QAo5SFXXXXcvXXXXXXXXXXXX-256-256.png","link":"javascript:;","text":"阿里云客户满意中心"}],"keys":[{"title":"热门产品","keyList":[{"link":"https://promotion.aliyun.com/ntms/act/qwbk.html","title2":"高性能服务器2折起","text":"云服务器2折起"},{"link":"https://www.aliyun.com/product/rds","title2":"云数据库RDS","text":"云数据库RDS"},{"link":"https://www.aliyun.com/product/oss","title2":"云存储OSS","text":"云存储OSS"},{"link":"https://www.aliyun.com/product/nat","title2":"NAT配置","text":"NAT网关"},{"link":"https://www.aliyun.com/product/slb","title2":"负载均衡","text":"负载均衡"},{"link":"https://wanwang.aliyun.com/","title2":"网站域名注册","text":"域名注册"},{"link":"https://market.aliyun.com/jianzhan","title2":"网站建设","text":"网站建设"},{"link":"https://data.aliyun.com/","title2":"数加大数据","text":"大数据"},{"link":"https://www.aliyun.com/","title2":"云计算","text":"云计算"}]},{"title":"用户热搜","keyList":[{"tce_rule_count":"1","link":"https://beian.aliyun.com/","title2":"ICP备案","text":"网站备案"},{"tce_rule_count":"1","link":"https://market.aliyun.com/wanganfa","title2":"网络安全法解读","text":"网安法"},{"tce_rule_count":"1","link":"https://www.aliyun.com/product/cdn","title2":"网站cdn加速","text":"CDN加速"},{"tce_rule_count":"1","link":"https://www.aliyun.com/product/apigateway","title2":"API网关","text":"API网关"},{"tce_rule_count":"1","link":"https://qiye.aliyun.com/","title2":"企业邮箱","text":"企业邮箱"},{"tce_rule_count":"1","link":"https://whois.aliyun.com/","title2":"whois查询","text":"whois查询"},{"tce_rule_count":"1","link":"https://www.aliyun.com/product/live","title2":"视频直播解决方案","text":"视频直播"},{"tce_rule_count":"1","link":"https://www.aliyun.com/product/vod","title2":"视频点播","text":"视频转码"},{"tce_rule_count":"1","link":"https://market.aliyun.com/security","title2":"云安全","text":"云安全"}]},{"title":"更多推荐","keyList":[{"tce_rule_count":"1","link":"https://tianchi.aliyun.com/","title2":"数据算法竞赛","text":"数据科研社区"},{"tce_rule_count":"1","link":"https://edu.aliyun.com/","title2":"阿里云大学","text":"阿里云大学"},{"tce_rule_count":"1","link":"https://promotion.aliyun.com/ntms/campus2017.html","title2":"云翼计划","text":"学生机"},{"tce_rule_count":"1","link":"https://bbs.aliyun.com/","title2":"开发者论坛","text":"IT论坛"},{"tce_rule_count":"1","link":"https://data.aliyun.com/visual/datav","title2":"Datav数据可视化","text":"数据可视化"},{"tce_rule_count":"1","link":"https://wanwang.aliyun.com/hosting/","title2":"云虚拟主机","text":"云虚机"},{"tce_rule_count":"1","link":"https://wanwang.aliyun.com/domain/com/","title2":".com域名","text":"com域名"},{"tce_rule_count":"1","link":"https://wanwang.aliyun.com/domain/cn/","title2":".cn域名","text":"cn域名"},{"tce_rule_count":"1","link":"https://www.aliyun.com/solution/security/compliance","title2":"等保合规安全解决方案","text":"合规安全解决方案"}]}],"countinfo":{"link95187":{"length_pc":0,"length":0},"xiaoyun":{},"qrcode":{"length_pc":0,"length":0},"keys":{"length_pc":0,"length":0},"inter":{"length_pc":0,"length":0}},"$tmsId":"tce/753070"}
+  </textarea>
+
+  <div class="y-row" id="J_homePageRegister" style="display: block;">
+  <div aliyun-lego-data="//www.aliyun.com/lego/individuation/index/registered" aliyun-lego-tip="true"><link rel="stylesheet" type="text/css" href="p5_MobileGovernment/index(1).css">
+<link rel="stylesheet" type="text/css" href="p5_MobileGovernment/index(2).css">
+<!-- exported styles -->
+
+
+
+
+
+
+
+  
+      
+  <!--region -->
+            
+                
+                <div data-spm="715197" data-moduleid="0" data-name="aliyun-intelligent-new" data-guid="715197" id="guid-715197" data-scene-id="842003" data-scene-version="0" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-intelligent-new J_Module" tms="aliyun-intelligent-new/0.0.32" tms-datakey="tce/842003" done="true"><div class="module-wrap J_tb_lazyload dbl_tms_module_wrap" style="display: none;" version="0.0.22">
+  <input style="display: none;" name="debug_module">
+  <textarea style="display: none;" name="priority_module">[{"name":"case4"},{"name":"case5"},{"name":"case1"},{"name":"case2"},{"name":"kaifa"}]</textarea>
+  <textarea style="display: none;" name="cell_module">[{"customer_type":[{"0":"false","1":"false","tce_rule_count":"1"}],"go_to_aboad_demand_level":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"fromCookie":"false","lost_risk_score":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"user_tech_strength":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"association":[{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"},{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"},{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"}],"aliyun_site_activity_level":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"main_browse_prd":[{"rds":"false","ecs":"false","mail":"false","vm":"false","domain":"false","tce_rule_count":"1","slb":"false","cdn":"false","oss":"false"}],"member_rights":"[object Object]","longTailUser":"false","result":"case1","user_dentity_des":[{"技术/运维":"false","技术部副负责人":"false","其它":"false","高级架构师":"false","tce_rule_count":"1","平台工程师":"false","站长":"false","CEO":"false","CEO （法人）":"false","项目负责人":"false","技术负责人":"false","财务负责人":"false","股东":"false","技术运维负责人":"false","运维负责人":"false","技术人员":"false"}],"new_user_ecs_buy_level":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"aliyun_prd_retain":[{"rds":"false","ecs":"false","mail":"false","vm":"false","domain":"false","tce_rule_count":"1","slb":"false","cdn":"false","oss":"false"}],"prob_cal_level_churn":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"user_level_yun":[{"tce_rule_count":"1","V0":"false","V1":"false","V2":"false","V3":"false","V4":"false"},{"tce_rule_count":"1","V0":"false","V1":"false","V2":"false","V3":"false","V4":"false"}],"user_level":[{"L0":"false","L1":"false","L2":"false","L3":"false","tce_rule_count":"1","L4":"false"},{"L0":"false","L1":"false","L2":"false","L3":"false","tce_rule_count":"1","L4":"false"}],"user_cat_level1":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"is_ecs_retain":"0","user_cat_name_level1":[{"网站":"false","其它":"false","通讯社交":"false","tce_rule_count":"1","o2o":"false","金融":"false","IT与软件开发":"false","能源/交通运输/生产制造":"false","移动APP":"false","教育":"false","音视频":"false","医疗健康":"false","政府/事业单位":"false","游戏":"false","物联网":"false","电子商务":"false","旅游":"false"}],"interested_prd":[{"rds":"false","ecs":"false","mail":"false","vm":"false","domain":"false","tce_rule_count":"1","slb":"false","cdn":"false","oss":"false"}],"ecs_res_use_stage":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}]},{"customer_type":[{"0":"false","1":"false"}],"go_to_aboad_demand_level":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"fromCookie":"false","lost_risk_score":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"user_tech_strength":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"association":[{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"},{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"},{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"},{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"},{"channel_label":"false","incall_cbm_name":"false","architect_cbm_name":"false","csm_name":"false","abroad_cbm_name":"false","tce_rule_count":"1","cbm_name":"false","fenxiao_lable":"false","district_cbm_name":"false","es_cbm_name":"false"}],"aliyun_site_activity_level":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"main_browse_prd":[{"rds":"false","ecs":"false","mail":"false","vm":"false","domain":"false","tce_rule_count":"1","slb":"false","cdn":"false","oss":"false"}],"member_rights":"[object Object]","longTailUser":"false","result":"case2","user_dentity_des":[{"技术/运维":"false","技术部副负责人":"false","其它":"false","高级架构师":"false","tce_rule_count":"1","平台工程师":"false","站长":"false","CEO":"false","CEO （法人）":"false","项目负责人":"false","技术负责人":"false","财务负责人":"false","股东":"false","技术运维负责人":"false","运维负责人":"false","技术人员":"false"}],"new_user_ecs_buy_level":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"aliyun_prd_retain":[{"rds":"false","ecs":"false","mail":"false","vm":"false","domain":"false","tce_rule_count":"1","slb":"false","cdn":"false","oss":"false"}],"prob_cal_level_churn":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"user_level_yun":[{"V0":"false","V1":"false","V2":"false","V3":"false","V4":"false"}],"user_level":[{"L0":"false","L1":"false","L2":"false","L3":"false","tce_rule_count":"1","L4":"false"}],"user_cat_level1":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}],"is_ecs_retain":"1","user_cat_name_level1":[{"网站":"false","其它":"false","通讯社交":"false","tce_rule_count":"1","o2o":"false","金融":"false","IT与软件开发":"false","能源/交通运输/生产制造":"false","移动APP":"false","教育":"false","音视频":"false","医疗健康":"false","政府/事业单位":"false","游戏":"false","物联网":"false","电子商务":"false","旅游":"false"}],"interested_prd":[{"rds":"false","ecs":"false","mail":"false","vm":"false","domain":"false","tce_rule_count":"1","slb":"false","cdn":"false","oss":"false"}],"ecs_res_use_stage":[{"0":"false","1":"false","2":"false","tce_rule_count":"1"}]},{"result":"kaifa","user_dentity_des":[{"技术/运维":"true","技术部副负责人":"true","高级架构师":"true","其它":"false","tce_rule_count":"1","平台工程师":"false","站长":"true","CEO":"false","CEO （法人）":"false","项目负责人":"false","技术负责人":"true","财务负责人":"false","股东":"false","技术运维负责人":"true","运维负责人":"true","技术人员":"true"}],"aliyun_prd_retain":[{"rds":"false","ecs":"true","mail":"false","vm":"false","domain":"false","slb":"false","cdn":"false","oss":"false"}],"fromCookie":"false","user_cat_level1":[{"0":"true","1":"false","2":"true"}],"user_cat_name_level1":[{"网站":"false","其它":"false","通讯社交":"false","tce_rule_count":"1","o2o":"false","金融":"false","IT与软件开发":"true","能源/交通运输/生产制造":"false","移动APP":"false","教育":"false","音视频":"false","医疗健康":"false","政府/事业单位":"false","游戏":"false","物联网":"false","电子商务":"false","旅游":"false"}],"longTailUser":"false"},{"result":"case4","customer_type":[{"0":"true","1":"false","tce_rule_count":"1"}],"fromCookie":"false","user_cat_level1":[{"0":"true","1":"false","2":"false"}],"is_ecs_retain":"0","longTailUser":"false"},{"result":"case5","customer_type":[{"0":"false","1":"true","tce_rule_count":"1"}],"fromCookie":"false","user_cat_level1":[{"0":"true","1":"false","2":"false","tce_rule_count":"1"}],"is_ecs_retain":"0","longTailUser":"false"}] </textarea>
+  <input name="site" value="indexregistered" type="hidden">
+</div>
+
+</div>
+            
+  <!--region -->
+      
+  
+      
+  <!--region -->
+            
+                
+                <div data-spm="426596" data-moduleid="159246" data-name="aliyun-individuation-index-registered" data-guid="426596" id="guid-426596" data-scene-id="439700" data-scene-version="0" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-individuation-index-registered J_Module" tms="aliyun-individuation-index-registered/0.0.10" tms-datakey="tce/439700"><div class="module-wrap J_tb_lazyload dbl_tms_module_wrap">
+  <textarea style="width: 100%;height: 600px;display: none;" name="module">[{"spm":"case4","code":"case4","link":"https://free.aliyun.com/?type=personal","text":"获得免费上云实践机会","title":"免费套餐 35+产品 6个月免费，为您提供最佳上云实践机会"},{"spm":"case5","code":"case5","link":"https://free.aliyun.com/?type=enterprise","text":"获得免费上云实践机会","title":"免费套餐35+ 产品 6个月免费，为您提供最佳上云实践机会"},{"spm":"case1","code":"case1","link":"https://www.aliyun.com/easybuy","text":"云服务器推荐配置","title":"绝对精选配置，满足您的典型需求"},{"spm":"case2","code":"case2","link":"https://home.console.aliyun.com/#/","text":"管理控制台","title":"运筹帷幄，高效管理云计算产品和服务"},{"spm":"kaifa","code":"kaifa","link":"https://code.aliyun.com/","text":"立即开启","title":"开发者专享50G超大存储代码托管服务"}]</textarea>
+</div>
+</div>
+            
+  <!--region -->
+      
+  
+
+<!-- exported scripts -->
+
+
+
+
+
+
+<script src="p5_MobileGovernment/index.js(2).下载"></script>
+<script src="p5_MobileGovernment/index.js(3).下载"></script></div></div>
+
+  <div class="small-footer aliyun-common-footer-white">
+
+    <div class="ali-main-time" style="display: none;">
+      <ul class="ali-main-time-content y-row">
+        <li style="width: 27.3%;"><a rel="nofollow" href="https://www.aliyun.com/support/jpfw#gold-tab-05" target="_blank" data-spm-click="gostr=/aliyun;locaid=a112">
+                <span>
+                  <img class="white" src="img/TB1t1u8LXXXXXXpaXXXXXXXXXXX-100-100.png">
+                  <img class="black" src="img/TB1Sj6bLXXXXXXPXVXXXXXXXXXX-100-100.png">
+                </span>
+          <span class="ali-main-time-what">100倍故障时长赔偿</span>
+        </a>
+        </li>
+        <li style="width: 27.3%;"><a rel="nofollow" href="https://www.aliyun.com/support/jpfw#gold-tab-06" target="_blank" data-spm-click="gostr=/aliyun;locaid=a113">
+                <span>
+                  <img class="white" src="img/TB1Jvy7LXXXXXXoaXXXXXXXXXXX-100-100.png">
+                  <img class="black" src="img/TB1CZ15LXXXXXbHaXXXXXXXXXXX-100-100.png">
+                </span>
+          <span class="ali-main-time-what">7×24小时售后支持</span>
+        </a>
+        </li>
+        <li style="width: 27.3%;"><a rel="nofollow" href="https://www.aliyun.com/support/jpfw#gold-tab-03" target="_blank" data-spm-click="gostr=/aliyun;locaid=a114">
+                <span>
+                  <img class="white" src="img/TB17_ThLXXXXXb9XpXXXXXXXXXX-100-100.png">
+                  <img class="black" src="img/TB14aHiLXXXXXcZXpXXXXXXXXXX-100-100.png">
+                </span>
+          <span class="ali-main-time-what">5天无理由退款</span>
+        </a>
+        </li>
+        <li style="width: 17%;"><a rel="nofollow" href="https://www.aliyun.com/support/jpfw#gold-tab-05" target="_blank" data-spm-click="gostr=/aliyun;locaid=a115">
+                <span>
+                  <img class="white" src="img/TB13HuYLXXXXXanapXXXXXXXXXX-100-100.png">
+                  <img class="black" src="img/TB1FJm0LXXXXXaVapXXXXXXXXXX-100-100.png">
+                </span>
+          <span class="ali-main-time-what">备案用时多久送多久</span>
+        </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="ali-main-know">
+      <div class="y-row">
+        <div class="phone-cell">
+          <div>
+            <h1>售前咨询热线</h1>
+
+            <h1>010-88210980</h1>
+            <ul>
+              
+              <li><a href="Advice.html?index=3" target="_blank" rel="nofollow">专业技术咨询</a></li>
+              
+              <li><a href="" target="_blank" rel="nofollow">全方位产品解读</a></li>
+              
+              <li><a href="" target="_blank" rel="nofollow">成熟解决方案</a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <ul class="ali-main-know-content y-clear">
+          
+          <li>
+            <h3 class="ali-main-know-title">服务与支持</h3>
+            <ul class="ali-main-know-subcontent">
+              
+              <li><a title="售前咨询" target="_blank" href="Advice.html?index=3">售前咨询</a></li>
+              
+              <li><a title="联系客服" target="_blank" href="Advice.html?index=3">联系客服</a></li>
+              
+              <li><a title="新手学堂" target="_blank" href="https://help.aliyun.com/contact/school.htm">新手学堂</a></li>
+			  
+            </ul>
+          </li>
+          
+  
+          
+         
+          
+          <li>
+            <h3 class="ali-main-know-title">其他</h3>
+            <ul class="ali-main-know-subcontent">
+              
+              <li><a title="定价" target="_blank" href="https://www.aliyun.com/price">定价</a></li>
+              
+              <li><a title="客户案例" target="_blank" href="https://www.aliyun.com/customer/">客户案例</a></li>
+			  
+              <li><a title="开发者交流" target="_blank" href="https://bbs.aliyun.com/thread/229.html">开发者交流</a></li>
+              
+              <li><a title="提交建议" target="_blank" href="https://connect.aliyun.com/">提交建议</a></li>
+              
+            </ul>
+          </li>
+          
+          <li style="width: 20%;">
+            <h3 class="ali-main-know-title">O2O商圈微商平台</h3>
+			<img class="ali-main-know-cell-qr" style="width:80px"" src="images/newMarket/qrcode_for_gh_1117f3cab254_430.jpg">
+            <ul class="ali-main-know-subcontent">
+              
+              
+              <li class="ali-main-know-cell qr-code">
+                <a href="www.o2oplus.com.cn/o2osq/turnToDownLoadPage.jsp" target="_blank" data-spm-click="gostr=/aliyun;locaid=a123p" rel="nofollow">O2O商圈APP</a>
+                
+              </li>
+              
+              
+              <li class="ali-main-know-cell qr-code">
+                <a href="http://weibo.com/aliyun?sudaref=www.aliyun.com" target="_blank" data-spm-click="gostr=/aliyun;locaid=a123p" rel="nofollow">O2O商圈微博</a>
+                <img class="ali-main-know-cell-qr" style="display:  none;" src="img/TB1zE3rLXXXXXXsaXXXXXXXXXXX-84-84.png">
+              </li>
+              
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+    
+
+    <div class="ali-copyright-100">
+      <div class="y-row copyright">
+        
+
+        <div class="footer-search" style="display: none;">
+          <form class="frm-search" action="https://www.aliyun.com/ss">
+            <input placeholder="搜索" name="k">
+            <button class="btn-search" type="submit">
+              <i class="icon-Search"></i>
+            </button>
+          </form>
+
+        </div>
+
+
+        <p class="link-wrap">
+
+          <a class="link-item" rel="nofollow" href="" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8001">O2O商圈新零售超级APP</a>
+
+          <a class="link-item" rel="nofollow" href="https://www.taobao.com/" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8002">果蔬e站生鲜电商</a>
+
+          <a class="link-item" rel="nofollow" href="https://www.tmall.com/" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8003">新零售电商平台定制</a>
+
+          <a class="link-item" rel="nofollow" href="https://ju.taobao.com/" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8004">移动政务应用定制</a>
+
+          <a class="link-item" rel="nofollow" href="https://www.aliexpress.com/" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8005">物联网应用定制</a>
+
+          <a class="link-item" rel="nofollow" href="https://www.alibaba.com/" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8006">智慧城市应用定制</a>
+
+          <a class="link-item" rel="nofollow" href="https://www.1688.com/" target="_blank" data-spm-click="gostr=/aliyun;locaid=d8007">关于我们</a>
+          
+        </p>
+       
+        <!-- <a class="link-item xin" style="display: inline-block;" href="//verify.nic.xin/xinDetail/xinAuthInfoDetail?domainName=aliyun.xin" target="_blank" data-spm-click="gostr=/aliyun;locaid=xin" style="position: relative;">
+          <img class="white" src="//img.alicdn.com/tps/TB1.fDdNpXXXXajXpXXXXXXXXXX-96-42.png" style="margin-top: 4px;height: 21px;">
+        </a> -->
+       
+      </div>
+    </div>
+
+  </div>
+
+
+  
+
+
+  
+  <script type="text/javascript" src="p5_MobileGovernment/saved_resource(26)"></script>
+  
+
+
+<!--小云帮助-->
+<div class="float-tool" data-spm="101">
+<div aliyun-lego-data="//www.aliyun.com/lego/xiaoyun/combine" aliyun-lego-tip="true"><link rel="stylesheet" type="text/css" href="p5_MobileGovernment/index(3).css">
+<link rel="stylesheet" type="text/css" href="p5_MobileGovernment/index(4).css">
+<link rel="stylesheet" type="text/css" href="p5_MobileGovernment/index(5).css">
+<!-- exported styles -->
+
+
+
+
+
+
+
+  
+      
+  <!--region -->
+            
+                
+                <div data-spm="762944" data-moduleid="0" data-name="aliyun-common-xiaoyun-2017" data-guid="762944" id="guid-762944" data-scene-id="898420" data-scene-version="7" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-common-xiaoyun-2017 J_Module" tms="aliyun-common-xiaoyun-2017/0.0.56" tms-datakey="tce/898420"> 
+
+
+</div>
+            
+  <!--region -->
+      
+  
+      
+  <!--region -->
+            
+                
+                <div data-spm="874485" data-moduleid="0" data-name="aliyun-common-xiaoyun-qrqm" data-guid="874485" id="guid-874485" data-scene-id="1038131" data-scene-version="0" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-common-xiaoyun-qrqm J_Module" tms="aliyun-common-xiaoyun-qrqm/0.0.7" tms-datakey="tce/1038131">
+<div class="module-wrap J_tb_lazyload dbl_tms_module_wrap">
+  <!-- 避免用window的全局变量获取数据 -->
+  <textarea class="schemaData" style="display:none;">    {"moduleinfo":{"name":"just a test","url":"https://oa-panther.data.aliyun.com/get_creative_aliyun?did=293847040&amp;pid=1429&amp;t=1506396076652&amp;tpt=2&amp;c=43006&amp;vt=1&amp;as=380*120&amp;at=1&amp;ct=3&amp;n=1&amp;s=0"},"$tmsId":"tce/1038131"}
+  </textarea>
+</div>
+</div>
+            
+  <!--region -->
+      
+  
+      
+  <!--region -->
+            
+                
+                <div data-spm="885930" data-moduleid="0" data-name="aliyun-commonfooter-qrqm-95187" data-guid="885930" id="guid-885930" data-scene-id="1062330" data-scene-version="0" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="aliyun-commonfooter-qrqm-95187 J_Module" tms="aliyun-commonfooter-qrqm-95187/0.0.2" tms-datakey="tce/1062330">
+<div class="module-wrap J_tb_lazyload dbl_tms_module_wrap">
+  <!-- 避免用window的全局变量获取数据 -->
+  <textarea class="schemaData" style="display:none;">    {"moduleinfo":{"url":"//oa-panther.data.aliyun.com/get_creative_aliyun?did=293847040&amp;pid=1468&amp;t=1507776272032&amp;tpt=2&amp;c=43005&amp;vt=1&amp;as=728*90&amp;at=1&amp;ct=3&amp;n=1&amp;s=0"},"$tmsId":"tce/1062330"}
+  </textarea>
+
+
+</div>
+</div>
+            
+  <!--region -->
+      
+  
+
+<!-- exported scripts -->
+
+
+
+
+
+
+<script src="p5_MobileGovernment/index.js(4).下载"></script>
+<script src="p5_MobileGovernment/index.js(5).下载"></script>
+<script src="p5_MobileGovernment/index.js(6).下载"></script></div>
+</div>
+            
+  <!--region -->
+      
+  
+
+<!-- exported scripts -->
+
+
+<script src="p5_MobileGovernment/saved_resource(27)"></script>
+
+
+
+
+</div>
+
+</div>
+            
+  <!--region -->
+      
+  <!--region -->
+                          
+                <div data-spm="769155" data-moduleid="176654" data-name="www-aliyun-common-allinone" data-guid="769155" id="guid-769155" data-scene-id="906656" data-scene-version="0" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="www-aliyun-common-allinone J_Module" tms="www-aliyun-common-allinone/0.0.1" tms-datakey="tce/906656"><div class="module-wrap J_tb_lazyload dbl_tms_module_wrap">
+  <!-- 避免用window的全局变量获取数据 -->
+  <textarea class="schemaData" style="display:none;">    {"moduleinfo":{"javascripts_count":[{"count_phone":1,"count":1}],"styles_count":[{"count_phone":1,"count":1}],"htmls_count":[{"count_phone":1,"count":1}]},"htmls":[{}],"styles":[{}],"javascripts":[{"text":"if(!window.menubar){window.menubar={}};"}],"countinfo":{"javascripts":{"length_pc":0,"length":0},"htmls":{"length_pc":0,"length":0},"styles":{"length_pc":0,"length":0}},"$tmsId":"tce/906656"}
+  </textarea>
+  
+    <style>
+      
+    </style>
+  
+    <script>
+      if(!window.menubar){window.menubar={}};
+    </script>
+  
+</div>
+</div>           
+  <!--region -->
+
+<!-- exported scripts -->
+
+<script src="p5_MobileGovernment/saved_resource(28)"></script>
+
+<!-- footer block end -->
+
+<!-- page export scripts  -->
+
+<script src="p5_MobileGovernment/saved_resource(29)"></script> 
+
+<!-- page export scripts end -->
+
+</div></div><script async="" src="p5_MobileGovernment/data-statistics.js.下载" type="text/javascript"></script><noscript>&lt;div style="display:inline;"&gt;&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/977293844/?value=0&amp;guid=ON&amp;script=0"/&gt;&lt;/div&gt;</noscript><iframe src="p5_MobileGovernment/blk.html" id="_oid_ifr_" style="width: 0px; height: 0px; display: none;"></iframe><script type="text/javascript" src="p5_MobileGovernment/conversion_async.js.下载"></script>
+    <!-- JavaScript -->
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/less.min.js"></script>
+    <script src="scripts/tether.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/smoothscroll.js"></script>
+    <script src="scripts/jquery.smooth-scroll.min.js"></script>
+    <script src="scripts/placeholders.jquery.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/jquery.counterup.min.js"></script>
+    <script src="scripts/waypoints.min.js"></script>
+    <script src="scripts/video.js"></script>
+    <script src="scripts/bigvideo.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/clickintent.js"></script>
+    <script type="text/javascript">
+	
+		var width = window.screen.width;
+		//document.getElementById("view_tr").style.height = width*0.3+"px";
+		$(".view_td").css('height',width*0.25+'px');
+		$(".example_div").css('height',width*0.192+'px');
+		$(".method_div").css('height',width*0.35+'px');
+		
+		//解决方案跳转
+		function solutionClick(index){
+			if(index==1){
+				window.location.href="pNewMarket_small.html";
+			}else if(index==2){
+				window.location.href="pNewMarket_middle.html";
+			}
+		} 
+		//鼠标滑过的变化
+		function changeStyle(obj,index,type){
+			if(index==1){
+				obj.style.border=type==1?"#0ae 1px solid":"#ddd 1px solid";
+			}else{
+				obj.style.background=type==1?"rgba(0,207,239,0.8)":"rgba(44,44,44,0.5)";
+				obj.style.backgroundSize=type==1?"130% 130%":"100% 100%";
+				var img = obj.childNodes[1];
+				img = img.childNodes[0];
+				img.src=type==1?img.src.replace(".png","_s.png"):img.src.replace("_s.png",".png");
+			}
+		}
+		//点击视频按钮
+		function videoClick(index){
+			document.getElementById("video_div").style.display=index==1?"block":"none";
+		}
+		//咨询点击事件
+		function zixunClick(index){
+			if(index>1){
+				window.location.href="Advice.html?index="+index;
+			}
+		}
+		//鼠标滑过咨询的显示与隐藏事件
+		function showZixun(index){
+			document.getElementById("zixun").style.display=index==1?"block":"none";
+		}
+		//客户案例点击查看详情
+		function exampleDetail(str){
+			window.location.href = "pNewMarket_example.html?type="+str;
+		}
+		
+        $(function() {
+            $('.carousel').carousel({
+                pause: true,
+                interval: false
+            });
+            // loads the .html in the #navContainer
+            $('#navContainer').load('html/nav_hcl.html');
+        });
+        $(document).on("click touchend", ".clickToScroll", function() {
+            var $anchor = $(this);
+            console.log($($anchor.attr('href')));
+            $('html, body').animate({
+                scrollTop: '0px' //$($anchor.attr('href')).offset().top
+            }, 800);
+            //$('html, body').stop().animate({
+            // scrollTop:  $($anchor.attr('href')).offset().top
+            // }, 800, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>

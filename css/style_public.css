@@ -1,0 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Hind:600,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300);
+
+/*----------------------------------------------------------------------------------------
+						FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS
+-----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------
+						COMMON STYLES
+-----------------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Hind', sans-serif;
+	font-size: 17px;
+	font-weight: lighter;
+	line-height: 1.5;
+	color: #555;
+	background: #fff;
+}
+
+/*咨询建议整体div样式*/
+.zixun_bg{
+	z-index:1000;
+	position:fixed;
+	bottom:100px;
+	right:35px;
+}
+/*咨询建议右边小竖条样式*/
+.show_zixun{
+	margin-top:60px;float:right;padding:8px 10px;background-color:#0de;width:50px;height:170px;
+}
+/*小图标样式*/
+.show_zixun_img{
+	margin-bottom:2px;width:30px;height:30px;
+}
+/*咨询建议竖字样式*/
+.shw_zixun_span{
+	color:white;font-size:17px;font-weight:bold;
+}
+/*咨询影藏div*/
+.zixun_hidden_div{
+	margin-right:10px;float:right;padding-top:15px;width:300px;height:230px;background-color:#fefeef;display:none;
+}
+/*咨询影藏每一行样式*/
+.zixun_hidden_line{
+	width:100%;height:70px;
+}
+/*咨询影藏部分每行img*/
+.zixun_hidden_line_img{
+	float:left;margin:20px;width:30px;height:30px;
+}
+/*咨询影藏每行文字div*/
+.zixun_hidden_line_right{
+	padding-top:10px;float:left;width:230px;
+}
+/*咨询影藏div每行标题*/
+.zixun_hidden_line_title{
+	color:black;font-weight:bold;font-size:16px;
+}
+/*咨询影藏div每行内容*/
+.zixun_hidden_line_content{
+	color:gray;font-size:12px;
+}
+/*咨询电话特殊样式*/
+.zixun_hidden_line_tel{
+	color:#fa0;font-size:14px;
+}
+
+
+
+/*新零售页面样式*/
+/*颜色快样式*/
+.small_fang{
+	float:left;width:2px;height:22px;background:#0cf;margin:7px 10px 0 0;
+}
+/*每一段标题样式*/
+.title_span{
+	float:left;color:black;font-size:1.5rem;font-weight:bold;
+}
+/*前景背景样式*/
+.view_bg_all{
+	width:100%;height:100%;background-size:100% 100%;
+}
+/*前景背景样式*/
+.view_bg_half{
+	width:100%;height:50%;background-size:100% 100%;
+}
+/*前景方块td*/
+.view_td{
+	width:25%;height:100%;
+}
+/*背景加半透明层*/
+.hidden_dark_div{
+	width:100%;height:100%;background-color:rgba(44,44,44,0.5);
+}
+/*方块中间img*/
+.view_center_img{
+	width:20%;margin:0% 40% 0 40%;padding-top:30%;
+}
+/*方块中间白线*/
+.view_white_line{
+	width:8%;height:3px;margin:17px 46%;background-color:white;
+}
+/*方块中间img*/
+.view_center_img_half{
+	width:20%;margin:0% 40% 0 40%;padding-top:10%;
+}
+/*方块中间标题*/
+.view_center_title{
+	width:100%;line-height:25px;color:white;text-align:center;
+}
+
+/*解决方案全景背景样式*/
+.allimg_bg{
+	width:100%;height:150px;text-align:center;border:#ddd 1px solid;border-bottom:0 #fff solid;
+}
+.allimg_left{
+	width:5%;height:100%;background-color:#eee;border-right:1px #ddd solid;float:left;
+}
+.allimg_right{
+	width:95%;height:100%;background-color:#fff;float:left;padding:15px 5%;
+}
+.allimg_div{
+	float:left;margin:10px 1% 10px 1%;border:#ddd 1px solid;width:23%;height:55px;line-height:55px;background-color:#eee;
+}
+
+.model_left_div{
+	width:60%;height:322px;border:#ddd 1px solid;border-bottom:0px #ddd solid;float:left;
+}
+.model_line_gray{
+	width:100%;height:80px;padding:20px 10%;background-color:#eee;
+}
+.model_line_white{
+	width:100%;height:120px;padding:20px 5%;background-color:#fff;font-size:14px;border-bottom:1px #ddd solid;
+}
+.model_right_div{
+	width:40%;height:302px;border-top:#ddd 1px solid;border-right:1px #ddd solid;float:left;margin:10px 0;
+}
+
+.example_div{
+	width:24%;border:1px #ddd solid;float:left;margin:0 1% 10px 0;text-align:center;
+}
+
+
+/*热门方案div*/
+.method_div{
+	width:32%;border:1px #ddd solid;text-align:center;float:left;
+}
+
+.method_line_gray{
+	width:100%;height:30%;background-color:#eee;padding-top:10%;
+}
+.method_line_white{
+	width:100%;height:70%;background-color:#fff;
+}
+.detail_button{
+	width:30%;background-color:#0ae;height:35px;line-height:35px;color:white;
+}
+.method_center{
+	width:100%;padding:10px 5%;
+}
+.method_center_div{
+	width:30%;padding:5%;text-align:left;float:left;font-size:10px;color:darkgray;
+}
+
+
+/*小型电商方案样式*/
+.head_td_left{
+	width:25%;height:120px;
+}
+.head_top_div{
+	width:98%;height:50%;border:1px #222 solid;border-bottom:0px #ddd solid;padding:10px 0 0 40%;
+}
+.head_bottom_div{
+	width:98%;height:50%;border:1px #eee solid;border-top:0px #ddd solid;text-align:center;font-size:11px;
+}
+.jiagou_left_div{
+	width:70%;float:left;
+}
+.jiagou_right_div{
+	width:30%;float:left;
+}
+.jiagou_right_gray{
+	width:100%;background-color:#f2f2f2;text-align:left;padding:25px 10%;
+}
+.jiagou_right_white{
+	width:100%;text-align:left;padding:25px 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
