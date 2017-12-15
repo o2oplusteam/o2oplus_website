@@ -1,0 +1,1 @@
+function DBL_COMMON_CLASS(){}!function(){KISSY&&jQuery&&$(document).ready(function(){$("div[tms-datakey]").each(function(t,n){var a=$(this).attr("data-name"),i=this;0==a.indexOf("wb-")&&$(this).attr("tms")&&KISSY.use("node,ali-mod/"+$(this).attr("tms")+"/index",function(t,n,a){new a(n.all(i))})})})}();
