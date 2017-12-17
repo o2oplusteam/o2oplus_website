@@ -1,42 +1,51 @@
 @import url(http://fonts.googleapis.com/css?family=Hind:600,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300);
-@import url("css/tinyScreen.css") screen and (max-device-width: 400px);
-//@baseColor: #AF1B20; // dark red
-//@secondColor: #1870B5; // sea blue
-@baseColor: #00A2E1; // light blue
-@secondColor: #1B1752; // sea blue
-@thirdColor:#8ec214; // 
-@btnBg: #fff;
-@btnHover: #e6e6e6;
-@border: #adadad;
-@btn-link-enhance: #f16c3a;
-
-// Dark-Theme Color
-@dbText: #fff;
-@dbHighlightText: @baseColor; // #308CAA / #00c1de
-@dbLink: #fff;
-@dbLinkHover: fade(@baseColor, 80%); 
-@darkBg: #202229; 
-
-.vendor(@property, @value) {
-    -webkit-@{property}: @value;
-    -khtml-@{property}: @value;
-    -moz-@{property}: @value;
-    @{property}: @value;
-}
-
+@import url("tinyScreen.css") screen and (max-device-width: 400px);
+@import url("variables.less");
 
 /*----------------------------------------------------------------------------------------
-						FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS
+						FONTS Styles - // PingFang-SC-Regular.ttf
 -----------------------------------------------------------------------------------------*/
 
+// @font-face {
+//   font-family: 'PingFangSC-Regular';
+//   src:  url('PingFang-SC-Regular.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'PingFangSC-Light';
+//   src:  url('PingFang-SC-Light.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'PingFangSC-Bold';
+//   src:  url('PingFang-SC-Bold.ttf') format('ttf');
+// }
 
+/*----------------------------------------------------------------------------------------
+						FOOTER Styles
+-----------------------------------------------------------------------------------------*/
+
+footer.lbFooter{
+  padding: 3rem 0;
+  .lb-footer-siteMap{
+
+  }
+  .lb-footer-copyright{
+    margin: 0 0 2rem 0;
+    img.logo{
+      max-width: 2rem;
+    }
+    .editContent{
+      line-height: 2rem;
+    }
+  }
+}
 /*----------------------------------------------------------------------------------------
 						COMMON STYLES
 -----------------------------------------------------------------------------------------*/
 
 body {
-    font-family: 'Hind', sans-serif;
+    // font-family: 'PingFangSC-Regular', 'Hind', sans-serif;
+    font-family: 'PingFangSC','helvetica neue','hiragino sans gb','arial','microsoft yahei ui','microsoft yahei','simsun','sans-serif';
     font-size: 18px;
     font-weight: lighter;
     line-height: 1.5;
@@ -80,7 +89,7 @@ section.full-height {
         }
     }
     .container.narrowMargin{
-        
+
     }
 }
 
@@ -354,7 +363,7 @@ hr {
         padding-top: 2rem; // 40px;
         padding-bottom: 80px;
     }
-	
+
     .text-left,
     .text-right {
         text-align: center;
@@ -609,10 +618,10 @@ hr {
 #content-center-video {
     .row {
         .desc-text{
-            font-size: 15px; 
+            font-size: 15px;
         }
     }
-   } 
+   }
 }
 
 /*----------------------------------------------------------------------------------------
@@ -1398,7 +1407,6 @@ a.panel-heading.collapsed:after {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-
 /*----------------------------------------------------------------------------------------
 						TABS STYLES
 -----------------------------------------------------------------------------------------*/
@@ -1408,11 +1416,28 @@ a.panel-heading.collapsed:after {
     left: 0;
     top: 0;
     width: 100%;
-    
+
+    .container{
+      .navbar-brand.goto{
+        color: @largTitleColor;
+        font-size: 1.6rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: .5rem;
+        img{
+          height: 2.8rem;
+          padding-right: .6rem;
+        }
+      }
+    }
+
     .navbar-toggler {
         right: -0.4rem;
-        background: fade(@baseColor, 86%);
+        background: transparent; //fade(@baseColor, 86%);
         padding: .25rem .6rem;
+        // border-color: fade(@baseColor, 86%);
         .navbar-toggler-icon{
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
             width: 1.2em;
@@ -1439,7 +1464,7 @@ a.panel-heading.collapsed:after {
         }
     }
     .navbar-collapse {
-        margin-top: 1rem;
+        margin: .5rem 0;
         .bg-dark{
             li.nav-item {
                 a.nav-link{
@@ -1483,7 +1508,7 @@ a.panel-heading.collapsed:after {
         li.nav-item.dropdown{
             .dropdown-menu.bg-dark{
                 top: 2.8rem;
-                
+
                 a.dropdown-item{
                     color: @dbLink;
                     &:hover{
@@ -3843,5 +3868,3 @@ ul.posts-line .post .title {
 	width: 20%;
     margin: 0px 40%;
 }
-    
-    

@@ -1,0 +1,43 @@
+//@import url(http://fonts.googleapis.com/css?family=Hind:600,300);
+//@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300);
+@font-face {
+    // https://css-tricks.com/snippets/css/using-font-face/
+    font-family: 'zzgfDianHeiThin';
+    src: url('造字工房典黑细体.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+@font-face {
+    // https://css-tricks.com/snippets/css/using-font-face/
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+@import url("../css/tinyScreen.css") screen and (max-device-width: 400px);
+//@baseColor: #AF1B20; // dark red
+//@secondColor: #1870B5; // sea blue
+@baseColor: #00A2E1; // light blue
+@secondColor: #1B1752; // sea blue
+@thirdColor: #8ec214; //
+@btnBg: #fff;
+@btnHover: #e6e6e6;
+@border: #adadad;
+@btn-link-enhance: #f16c3a;
+@lbLineColor: #DDD;
+@largTitleColor: #fff;
+
+// Dark-Theme Color
+@dbText: #fff;
+@dbHighlightText: @baseColor; // #308CAA / #00c1de
+@dbLink: #fff;
+@dbLinkHover: fade(@baseColor, 80%);
+@darkBg: #202229;
+
+.vendor(@property,
+@value) {
+    -webkit-@{property}: @value;
+    -khtml-@{property}: @value;
+    -moz-@{property}: @value;
+    @{property}: @value;
+}

@@ -1,334 +1,368 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="360-site-verification" content="962e70e172261fef5072e2145260d73f" />
+  <meta charset="utf-8">
+  <meta name="360-site-verification" content="962e70e172261fef5072e2145260d73f" />
 
-    <meta name="keywords" content="智慧e图 智慧城市中间件 智慧城市中间件平台 智慧城市应用 智慧城市应用搭建 智慧城市应用定制 智慧城市应用快速搭建 智慧城市跨速应用定制 智慧交通 智慧医疗 智慧民生 智慧大脑 智慧城镇 智慧农业 智慧林业 智慧电力 智慧高铁 智慧油田 人工智能 智慧家居 智慧商业 智慧通讯 零代码快速搭建智慧城市应用 零代码快速定制智慧城市应用 互联网+智慧城市 智慧城市中间件平台，互联网+政务 物联网应用快速搭建 移动政务应用快速搭建 政府微信公众号开发 政府微信代运营 微信小程序开发">
-	<meta name="description" content="光声新时空首创GIS应用快速搭建全新理念，率先在国内建立首例智慧城市GIS应用快速搭建平台，该平台可以跨行业、跨应用快速定制各种智慧城市和物联网GIS应用。平台可以不编代码（零代码），通过中间件平台定制快速搭建出各种智慧城市、物联网和移动互联网的GIS应用，包括智慧城市、智能交通、智慧旅游、智慧城管、智慧民生、智慧环保、智慧医疗等GIS应用或手机APP应用。该技术属国内首创国际领先。即使没有GIS编程经验，也可以轻松定制出GIS应用，开创了零代码搭建GIS应用的全新模式，大大减低了开发成本，缩短了开发周期，该平台是智慧城市、物联网和移动互联网的支撑平台。目前平台已经为政府、电信、电力、环保、铁路、交通、水利、石油、军事、卫生等二十多个行业，成功搭建了上百个智慧城市和物联网GIS 应用，平台的累计总收入已经破亿，并获得了巨大的成功。独创智慧城市和物联网中间件平台核心技术，目前该中间件平台已经为上百个世界五百强企业和国家重点行业客户提供了解决方案。">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智慧城市应用定制</title>
-    <!--pageMeta-->
-    <!-- Loading Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Loading Elements Styles -->
-    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
-    <!-- Loading Magnific-Popup Styles -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <!-- Loading Font Styles -->
-    <link href="css/iconfont-style.css" rel="stylesheet">
-	<!-- advice styles-->
-	<link href="css/style_public.css" rel="stylesheet"> 	
-    <!-- Favicons -->
-    <link rel="icon" href="images/favicons/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
+  <meta name="keywords" content="智慧e图 智慧城市中间件 智慧城市中间件平台 智慧城市应用 智慧城市应用搭建 智慧城市应用定制 智慧城市应用快速搭建 智慧城市跨速应用定制 智慧交通 智慧医疗 智慧民生 智慧大脑 智慧城镇 智慧农业 智慧林业 智慧电力 智慧高铁 智慧油田 人工智能 智慧家居 智慧商业 智慧通讯 零代码快速搭建智慧城市应用 零代码快速定制智慧城市应用 互联网+智慧城市 智慧城市中间件平台，互联网+政务 物联网应用快速搭建 移动政务应用快速搭建 政府微信公众号开发 政府微信代运营 微信小程序开发">
+  <meta name="description" content="光声新时空首创GIS应用快速搭建全新理念，率先在国内建立首例智慧城市GIS应用快速搭建平台，该平台可以跨行业、跨应用快速定制各种智慧城市和物联网GIS应用。平台可以不编代码（零代码），通过中间件平台定制快速搭建出各种智慧城市、物联网和移动互联网的GIS应用，包括智慧城市、智能交通、智慧旅游、智慧城管、智慧民生、智慧环保、智慧医疗等GIS应用或手机APP应用。该技术属国内首创国际领先。即使没有GIS编程经验，也可以轻松定制出GIS应用，开创了零代码搭建GIS应用的全新模式，大大减低了开发成本，缩短了开发周期，该平台是智慧城市、物联网和移动互联网的支撑平台。目前平台已经为政府、电信、电力、环保、铁路、交通、水利、石油、军事、卫生等二十多个行业，成功搭建了上百个智慧城市和物联网GIS 应用，平台的累计总收入已经破亿，并获得了巨大的成功。独创智慧城市和物联网中间件平台核心技术，目前该中间件平台已经为上百个世界五百强企业和国家重点行业客户提供了解决方案。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智慧城市应用定制</title>
+  <!--pageMeta-->
+  <!-- Loading Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loading Elements Styles -->
+  <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+  <!-- Loading Magnific-Popup Styles -->
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <!-- Loading Font Styles -->
+  <link href="css/iconfont-style.css" rel="stylesheet">
+  <!-- advice styles-->
+  <link href="css/style_public.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
       <script src="scripts/html5shiv.js"></script>
       <script src="scripts/respond.min.js"></script>
     <![endif]-->
-    <!--headerIncludes-->
+  <!--headerIncludes-->
 </head>
 
 <a href="http://webscan.360.cn/index/checkwebsite/url/www.o2oplus.com.cn"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/518756f643fa54f255b87dc48d122f89/?size=74x27"/></a>
 
 <script>
-    (function() {
-        var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?f8364fea8380e4ce6664b0c0fa29f624" : "https://jspassport.ssl.qhimg.com/11.0.1.js?f8364fea8380e4ce6664b0c0fa29f624";
-        document.write('<script src="' + src + '" id="sozz"><\/script>');
-    })();
-
+  (function() {
+    var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?f8364fea8380e4ce6664b0c0fa29f624" : "https://jspassport.ssl.qhimg.com/11.0.1.js?f8364fea8380e4ce6664b0c0fa29f624";
+    document.write('<script src="' + src + '" id="sozz"><\/script>');
+  })();
 </script>
 
 <body data-spy="scroll" data-target=".navMenuCollapse">
-    <div id="wrap">
-       <div id="navContainer">
-            <!--  nav bar will load from /html/nav.html   -->
-       </div>
-        <div style=" position: fixed;right: 0;top:90%;z-index:400">
-            <img src="images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
-        </div>
-		
-		<div id="video_div" style="z-index:1001;display:none;position:fixed;width:100%;height:100%;background-color:rgba(44,44,44,0.8);">
-			
-			<div style="width:80%;height:70%;margin:10%;">
-				<video width="100%" height="100%" controls autostart="true" loop="true">
+  <div id="wrap">
+    <div id="navContainer">
+      <!--  nav bar will load from /html/nav.html   -->
+    </div>
+    <div style=" position: fixed;right: 0;top:90%;z-index:400">
+      <img src="images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
+    </div>
+
+    <div id="video_div" style="z-index:1001;display:none;position:fixed;width:100%;height:100%;background-color:rgba(44,44,44,0.8);">
+
+      <div style="width:80%;height:70%;margin:10%;">
+        <video width="100%" height="100%" controls autostart="true" loop="true">
 					<source src="http://122.122.200.19:8888/gsmobile/FormerImage/1122.mp4" type="video/mp4">
 				</video>
-			</div>
-			<div onclick="videoClick(2);" style="position:fixed;right:10%;top:10%;width:70px;height:25px;background:#fff;text-align:center;">关闭</div>
-		</div>
-		
-		<div style="width:100%;height:45px;"></div>
-        <!-- INTRO CENTER -->
-        <div style="width:100%;height:320px;background-color:#024;padding:30px 10%;">
-			<div style="width:55%;float:left;">
-			<span style="color:white;font-size:28px;font-weight:bold;">智慧城市解决方案</span><br><br>
-			<span style="color:white;font-size:0.9rem;">跨行业及政府各部门的智慧城市GIS应用，实现信息的全面共享。</span>
-			<br><br>
-			<div style="margin:0px 10px 0 0px;float:left;width:150px;height:35px;line-height:35px;background:#0ae;color:white;text-align:center;">架构师咨询</div>
-			<div style="margin:0px 10px 0 10px;float:left;width:180px;height:35px;line-height:35px;border:1px #fff solid;color:white;text-align:center;">智慧城市实例预览</div>
-			</div>
-			<div style="float:right;margin:90px 20% 0px 0px;">
-				<img onclick="videoClick(1);" src="images/newMarket/playVideo.png" width="50px" />
-			</div>
-		</div>
-		
-		<div style="width:100%;padding:30px 10%;">
-			<table style="width:100%;">
-				<tr>
-					<td colspan="4">
-					<div class="small_fang"></div>
-					<span class="title_span">智慧城市热门业务场景</span>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td class="view_td">
-						<div class="view_bg_all" style="background-image:url(images/newMarket/view_bg1.png);">
-							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="view_bg_all" class="hidden_dark_div">
-								<div class="view_center_img"><img width="100%" src="images/newMarket/view_center1.png" /></div>
-								<div class="view_white_line"></div>
-								<div class="view_center_title">电商网站安全防护</div>
-							</div>
-						</div>
-					</td>
-					<td class="view_td">
-						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_top.png);">
-							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_top.png" /></div>
-								<div class="view_white_line"></div>
-								<div class="view_center_title">数据可视化展示大屏</div>
-							</div>
-						</div>
-						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_bottom.png);">
-							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_bottom.png" /></div>
-								<div class="view_white_line"></div>
-								<div class="view_center_title">短信通知和推广</div>
-							</div>
-						</div>
-					</td>
-					<td class="view_td">
-						<div class="view_bg_all" style="background-image:url(images/newMarket/view_bg3.png);">
-							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-								<div class="view_center_img"><img width="100%" src="images/newMarket/view_center3.png" /></div>
-								<div class="view_white_line"></div>
-								<div class="view_center_title">快速搭建电商平台</div>
-							</div>
-						</div>
-					</td>
-					<td class="view_td">
-						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_top.png);">
-							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_top.png" /></div>
-								<div class="view_white_line"></div>
-								<div class="view_center_title">个性化推荐</div>
-							</div>
-						</div>
-						<div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_bottom.png);">
-							<div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-								<div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_bottom.png" /></div>
-								<div class="view_white_line"></div>
-								<div class="view_center_title">支持营销功能的电商平台</div>
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-					<div class="small_fang"></div>
-					<span class="title_span">新零售解决方案全景图</span>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-						<div class="allimg_bg" style="height:180px;">
-							<div class="allimg_left">&nbsp;<br>&nbsp;<br>业<br>务<br>层
-							</div>
-							<div class="allimg_right">
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">全渠道融合</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">云POS</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">大数据运营</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">视频直播</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">个性化推荐</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">以图搜图</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">智能语音</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">客服机器人</div>
-							</div>
-						</div>
-						<div class="allimg_bg" style="height:110px;">
-							<div class="allimg_left">&nbsp;<br>技<br>术<br>层
-							</div>
-							<div class="allimg_right">
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div" style="border: 1px solid rgb(221, 221, 221);">智慧环保</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div" style="border: 1px solid rgb(221, 221, 221);">智慧民生</div>
-								<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">智慧旅游</div>
-							</div>
-						</div>
-						<div class="allimg_bg">
-							<div class="allimg_left" style="border-bottom:#ddd 1px solid;">&nbsp;<br>产<br>品<br>层
-							</div>
-							<div class="allimg_right" style="border-bottom:#ddd 1px solid;padding-top:45px;text-align:left;">
-								<div style="float:left;width:50px;height:50px;background-color:gray;margin:0 15px 0 10px;"></div>
-								<span style="float:left;">云服务器ECS是一种简单高效、处理能力可弹性伸缩的计算服务，帮助
+      </div>
+      <div onclick="videoClick(2);" style="position:fixed;right:10%;top:10%;width:70px;height:25px;background:#fff;text-align:center;">关闭</div>
+    </div>
+
+    <div style="width:100%;height:45px;"></div>
+    <!-- INTRO CENTER -->
+    <div style="width:100%;height:320px;background-color:#024;padding:30px 10%;">
+      <div style="width:55%;float:left;">
+        <span style="color:white;font-size:28px;font-weight:bold;">智慧城市解决方案</span><br><br>
+        <span style="color:white;font-size:0.9rem;">跨行业及政府各部门的智慧城市GIS应用，实现信息的全面共享。</span>
+        <br><br>
+        <div style="margin:0px 10px 0 0px;float:left;width:150px;height:35px;line-height:35px;background:#0ae;color:white;text-align:center;">架构师咨询</div>
+        <div style="margin:0px 10px 0 10px;float:left;width:180px;height:35px;line-height:35px;border:1px #fff solid;color:white;text-align:center;">智慧城市实例预览</div>
+      </div>
+      <div style="float:right;margin:90px 20% 0px 0px;">
+        <img onclick="videoClick(1);" src="images/newMarket/playVideo.png" width="50px" />
+      </div>
+    </div>
+
+    <div style="width:100%;padding:30px 10%;">
+      <table style="width:100%;">
+        <tr>
+          <td colspan="4">
+            <div class="small_fang"></div>
+            <span class="title_span">智慧城市热门业务场景</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="view_td">
+            <div class="view_bg_all" style="background-image:url(images/newMarket/view_bg1.png);">
+              <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="view_bg_all" class="hidden_dark_div">
+                <div class="view_center_img"><img width="100%" src="images/newMarket/view_center1.png" /></div>
+                <div class="view_white_line"></div>
+                <div class="view_center_title">电商网站安全防护</div>
+              </div>
+            </div>
+          </td>
+          <td class="view_td">
+            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_top.png);">
+              <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_top.png" /></div>
+                <div class="view_white_line"></div>
+                <div class="view_center_title">数据可视化展示大屏</div>
+              </div>
+            </div>
+            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_bottom.png);">
+              <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_bottom.png" /></div>
+                <div class="view_white_line"></div>
+                <div class="view_center_title">短信通知和推广</div>
+              </div>
+            </div>
+          </td>
+          <td class="view_td">
+            <div class="view_bg_all" style="background-image:url(images/newMarket/view_bg3.png);">
+              <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+                <div class="view_center_img"><img width="100%" src="images/newMarket/view_center3.png" /></div>
+                <div class="view_white_line"></div>
+                <div class="view_center_title">快速搭建电商平台</div>
+              </div>
+            </div>
+          </td>
+          <td class="view_td">
+            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_top.png);">
+              <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_top.png" /></div>
+                <div class="view_white_line"></div>
+                <div class="view_center_title">个性化推荐</div>
+              </div>
+            </div>
+            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_bottom.png);">
+              <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
+                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_bottom.png" /></div>
+                <div class="view_white_line"></div>
+                <div class="view_center_title">支持营销功能的电商平台</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="small_fang"></div>
+            <span class="title_span">新零售解决方案全景图</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="allimg_bg" style="height:180px;">
+              <div class="allimg_left">&nbsp;<br>&nbsp;<br>业<br>务<br>层
+              </div>
+              <div class="allimg_right">
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">全渠道融合</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">云POS</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">大数据运营</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">视频直播</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">个性化推荐</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">以图搜图</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">智能语音</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">客服机器人</div>
+              </div>
+            </div>
+            <div class="allimg_bg" style="height:110px;">
+              <div class="allimg_left">&nbsp;<br>技<br>术<br>层
+              </div>
+              <div class="allimg_right">
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div" style="border: 1px solid rgb(221, 221, 221);">智慧环保</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div" style="border: 1px solid rgb(221, 221, 221);">智慧民生</div>
+                <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="allimg_div">智慧旅游</div>
+              </div>
+            </div>
+            <div class="allimg_bg">
+              <div class="allimg_left" style="border-bottom:#ddd 1px solid;">&nbsp;<br>产<br>品<br>层
+              </div>
+              <div class="allimg_right" style="border-bottom:#ddd 1px solid;padding-top:45px;text-align:left;">
+                <div style="float:left;width:50px;height:50px;background-color:gray;margin:0 15px 0 10px;"></div>
+                <span style="float:left;">云服务器ECS是一种简单高效、处理能力可弹性伸缩的计算服务，帮助
 								<br>您快速构建更稳定、安全的应用，提升运维效率
 								</span>
-								<div style="float:right;width:50px;height:50px;background-color:gray;margin:0 10px;"></div>
-								<div style="float:right;width:50px;height:50px;background-color:gray;margin:0 10px;"></div>
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-					<div class="small_fang"></div>
-					<span class="title_span">新零售上云两大模式</span>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-						<div style="width:100%;">
-						<div class="model_left_div">
-							<div align="center" class="model_line_gray">
-								<div>
-									<img width="40px" src="images/newMarket/mode_left.png" />
-									零售公共云
-								</div>
-							</div>
-							<div class="model_line_white">
-								围绕人们日常的衣食住行，无论是互联网电商企业，还是传统零售企业，都开始使用云计算和大数据技术来提升客户体验， 提高营销效率，降低企业运营成本。零售公有云使用以下技术为企业“新零售”赋能。包括： 
-							</div>
-							<div class="model_line_white">
-								<div style="float:left;width:50%;margin-right:5%;">短时间内提供海量弹性计算资源，满足企业大促需求提升使用企业互联网化架构对零售企业传统IT架构进行化服务化改造赋能云生态isv，为企业提供各类零售场景下的Saas服务</div>
-								<div style="float:left;width:45%;">零售企业现有平台的云化部署，移动化改造，安全性，使用大数据、人工智能技术推动零售企业转型升级</div>
-							</div>
-						</div>
-						<div class="model_right_div">
-							<div align="center" class="model_line_gray" style="height:70px;">
-								<div>
-									<img width="35px" src="images/newMarket/mode_right.png" />
-									零售专有云
-								</div>
-							</div>
-							<div class="model_line_white"style="height:110px;">
-								结合光声新时空商业体系的能力与云计算能力，提供数据推送、链路稳定性保障、弹性扩展、数据交换、数据融合与挖掘，以及门店数字化等多种服务。
-							</div>
-							<div class="model_line_white" >
-								对接淘宝开放平台数据与技术能力，为双十一大促提供稳定性保障服务提供高可用的云计算产品，压测工具和全链路监控服务提供智能设备的门店收银、导购、客流分析及线上线下店铺一体化 
-							</div>
-						</div>
-						</div>
-					</td>
-				</tr>
-				
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-					<div class="small_fang"></div>
-					<span class="title_span">官方热门解决方案</span>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-						<div onclick="solutionClick(1);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div">
-							<div class="method_line_gray">
-								<span style="font-size:17px;font-weight:bold;">小型电商</span>
-								<br><span>适合初创电商公司快速搭建平台</span>
-							</div>
-							<div align="center" class="method_line_white">
-								<div class="method_center">
-									<div class="method_center_div">
-									<span>访问量<br></span>
-									<span style="font-size:11px;color:black;">100-200/天</span>
-									</div>
-									<div class="method_center_div">
-									<span>成交量<br></span>
-									<span style="font-size:11px;color:black;">3单/天</span>
-									</div>
-									<div class="method_center_div">
-									<span>安全防护<br></span>
-									<span style="font-size:11px;color:black;">全天防护</span>
-									</div>
-								</div>
-								<img width="70%" src="images/newMarket/method_1.jpg" style="border:1px #ddd solid;"/>
-								<br><span style="font-size:20px;color:#f0f;">￥529/月</span>
-								<div class="detail_button">查看详情</div>
-							</div>
-						</div>
-						<div onclick="solutionClick(2);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div" style="margin:0 2%;">
-							<div class="method_line_gray">
-								<span style="font-size:17px;font-weight:bold;">中型电商</span>
-								<br><span>适合快速发展的公司搭建电商平台</span>
-							</div>
-							<div align="center" class="method_line_white">
-								<div class="method_center">
-									<div class="method_center_div">
-									<span>访问量<br></span>
-									<span style="font-size:11px;color:black;">200-300/天</span>
-									</div>
-									<div class="method_center_div">
-									<span>成交量<br></span>
-									<span style="font-size:11px;color:black;">5单/天</span>
-									</div>
-									<div class="method_center_div">
-									<span>安全防护<br></span>
-									<span style="font-size:11px;color:black;">全天防护</span>
-									</div>
-								</div>
-								<img width="70%" src="images/newMarket/method_2.jpg" style="border:1px #ddd solid;"/>
-								<br><span style="font-size:20px;color:#f0f;">￥1029/月</span>
-								<div class="detail_button">查看详情</div>
-							</div>
-						</div>
-						<div onclick="solutionClick(3);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div">
-							<div class="method_line_gray">
-								<span style="font-size:17px;font-weight:bold;">电商视频直播</span>
-								<br><span>针对电商量身定制的营销方案</span>
-							</div>
-							<div align="center" class="method_line_white">
-								<div class="method_center">
-									<div class="method_center_div">
-									<span>日活<br></span>
-									<span style="font-size:11px;color:black;">10万</span>
-									</div>
-									<div class="method_center_div">
-									<span>并发<br></span>
-									<span style="font-size:11px;color:black;">2万</span>
-									</div>
-									<div class="method_center_div">
-									<span>秒开<br></span>
-									<span style="font-size:11px;color:black;">1-5秒</span>
-									</div>
-								</div>
-								<img width="70%" src="images/newMarket/method_3.jpg" style="border:1px #ddd solid;"/>
-								<br><span style="font-size:20px;color:#f0f;">￥0/月</span>
-								<div class="detail_button">查看详情</div>
-							</div>
-						</div>
-					</td>
-				</tr>
-				
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-					<div class="small_fang"></div>
-					<span class="title_span">客户案例</span>
-					</td>
-				</tr>
-				<tr><td><div style="width:100%;height:30px;"></div></td></tr>
-				<tr>
-					<td colspan="4">
-					<div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div_noimg">
-						<a href="pSmartCity_example.html?type=1">
+                <div style="float:right;width:50px;height:50px;background-color:gray;margin:0 10px;"></div>
+                <div style="float:right;width:50px;height:50px;background-color:gray;margin:0 10px;"></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="small_fang"></div>
+            <span class="title_span">新零售上云两大模式</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div style="width:100%;">
+              <div class="model_left_div">
+                <div align="center" class="model_line_gray">
+                  <div>
+                    <img width="40px" src="images/newMarket/mode_left.png" /> 零售公共云
+                  </div>
+                </div>
+                <div class="model_line_white">
+                  围绕人们日常的衣食住行，无论是互联网电商企业，还是传统零售企业，都开始使用云计算和大数据技术来提升客户体验， 提高营销效率，降低企业运营成本。零售公有云使用以下技术为企业“新零售”赋能。包括：
+                </div>
+                <div class="model_line_white">
+                  <div style="float:left;width:50%;margin-right:5%;">短时间内提供海量弹性计算资源，满足企业大促需求提升使用企业互联网化架构对零售企业传统IT架构进行化服务化改造赋能云生态isv，为企业提供各类零售场景下的Saas服务</div>
+                  <div style="float:left;width:45%;">零售企业现有平台的云化部署，移动化改造，安全性，使用大数据、人工智能技术推动零售企业转型升级</div>
+                </div>
+              </div>
+              <div class="model_right_div">
+                <div align="center" class="model_line_gray" style="height:70px;">
+                  <div>
+                    <img width="35px" src="images/newMarket/mode_right.png" /> 零售专有云
+                  </div>
+                </div>
+                <div class="model_line_white" style="height:110px;">
+                  结合光声新时空商业体系的能力与云计算能力，提供数据推送、链路稳定性保障、弹性扩展、数据交换、数据融合与挖掘，以及门店数字化等多种服务。
+                </div>
+                <div class="model_line_white">
+                  对接淘宝开放平台数据与技术能力，为双十一大促提供稳定性保障服务提供高可用的云计算产品，压测工具和全链路监控服务提供智能设备的门店收银、导购、客流分析及线上线下店铺一体化
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="small_fang"></div>
+            <span class="title_span">官方热门解决方案</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div onclick="solutionClick(1);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div">
+              <div class="method_line_gray">
+                <span style="font-size:17px;font-weight:bold;">小型电商</span>
+                <br><span>适合初创电商公司快速搭建平台</span>
+              </div>
+              <div align="center" class="method_line_white">
+                <div class="method_center">
+                  <div class="method_center_div">
+                    <span>访问量<br></span>
+                    <span style="font-size:11px;color:black;">100-200/天</span>
+                  </div>
+                  <div class="method_center_div">
+                    <span>成交量<br></span>
+                    <span style="font-size:11px;color:black;">3单/天</span>
+                  </div>
+                  <div class="method_center_div">
+                    <span>安全防护<br></span>
+                    <span style="font-size:11px;color:black;">全天防护</span>
+                  </div>
+                </div>
+                <img width="70%" src="images/newMarket/method_1.jpg" style="border:1px #ddd solid;" />
+                <br><span style="font-size:20px;color:#00a2e1;">￥529/月</span>
+                <div class="detail_button">查看详情</div>
+              </div>
+            </div>
+            <div onclick="solutionClick(2);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div" style="margin:0 2%;">
+              <div class="method_line_gray">
+                <span style="font-size:17px;font-weight:bold;">中型电商</span>
+                <br><span>适合快速发展的公司搭建电商平台</span>
+              </div>
+              <div align="center" class="method_line_white">
+                <div class="method_center">
+                  <div class="method_center_div">
+                    <span>访问量<br></span>
+                    <span style="font-size:11px;color:black;">200-300/天</span>
+                  </div>
+                  <div class="method_center_div">
+                    <span>成交量<br></span>
+                    <span style="font-size:11px;color:black;">5单/天</span>
+                  </div>
+                  <div class="method_center_div">
+                    <span>安全防护<br></span>
+                    <span style="font-size:11px;color:black;">全天防护</span>
+                  </div>
+                </div>
+                <img width="70%" src="images/newMarket/method_2.jpg" style="border:1px #ddd solid;" />
+                <br><span style="font-size:20px;color:#00a2e1;">￥1029/月</span>
+                <div class="detail_button">查看详情</div>
+              </div>
+            </div>
+            <div onclick="solutionClick(3);" onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="method_div">
+              <div class="method_line_gray">
+                <span style="font-size:17px;font-weight:bold;">电商视频直播</span>
+                <br><span>针对电商量身定制的营销方案</span>
+              </div>
+              <div align="center" class="method_line_white">
+                <div class="method_center">
+                  <div class="method_center_div">
+                    <span>日活<br></span>
+                    <span style="font-size:11px;color:black;">10万</span>
+                  </div>
+                  <div class="method_center_div">
+                    <span>并发<br></span>
+                    <span style="font-size:11px;color:black;">2万</span>
+                  </div>
+                  <div class="method_center_div">
+                    <span>秒开<br></span>
+                    <span style="font-size:11px;color:black;">1-5秒</span>
+                  </div>
+                </div>
+                <img width="70%" src="images/newMarket/method_3.jpg" style="border:1px #ddd solid;" />
+                <br><span style="font-size:20px;color:#00a2e1;">￥0/月</span>
+                <div class="detail_button">查看详情</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="small_fang"></div>
+            <span class="title_span">客户案例</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width:100%;height:30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div onmouseover="changeStyle(this,1,1);" onmouseout="changeStyle(this,1,2);" class="example_div_noimg">
+              <a href="pSmartCity_example.html?type=1">
 						<span style="font-size:18px;font-weight:bold;">
 							海南国际旅游岛门户网站</span><br><span>绿箭侠超市手机下单购物平台
 						</span>
@@ -524,8 +558,6 @@
 				</table>
 		</div>
 
-
-		
     <!-- BENEFITS GRID NUM 2 BLOCK -->
     <!-- MODALS BEGIN-->
     <div class="modal fade" id="modalMessage" tabindex="-1" role="dialog" aria-hidden="true">
@@ -537,12 +569,8 @@
         </div>
     </div>
     <!-- MODALS END-->
-
-	<div id="consult_div">
-	</div>
-	<div id="footer_div">
-	   </div>
-
+	<div id="consult_div"></div>
+	<div id="footer_div"></div>
 
     <!-- JavaScript -->
     <script src="scripts/jquery-3.2.1.min.js"></script>
@@ -562,13 +590,13 @@
     <script src="scripts/custom.js"></script>
     <script src="scripts/clickintent.js"></script>
     <script type="text/javascript">
-	
+
 		var width = window.screen.width;
 		//document.getElementById("view_tr").style.height = width*0.3+"px";
 		$(".view_td").css('height',width*0.25+'px');
 		$(".example_div_noimg").css('height','100px');
 		$(".method_div").css('height',width*0.35+'px');
-		
+
 		//解决方案跳转
 		function solutionClick(index){
 			if(index==1){
@@ -576,7 +604,7 @@
 			}else if(index==2){
 				window.location.href="pNewMarket_middle.html";
 			}
-		} 
+		}
 		//鼠标滑过的变化
 		function changeStyle(obj,index,type){
 			if(index==1){
@@ -607,7 +635,7 @@
 		function exampleDetail(str){
 			window.location.href = "pNewMarket_example.html?type="+str;
 		}
-		
+
         $(function() {
             $('.carousel').carousel({
                 pause: true,
@@ -615,9 +643,10 @@
             });
             // loads the .html in the #navContainer
             $('#navContainer').load('html/nav_hcl.html');
-			$('#footer_div').load('html/footer.html');
-			$('#consult_div').load('html/consult.html');
+      			$('#footer_div').load('html/footer.html');
+      			$('#consult_div').load('html/consult.html');
         });
+
         $(document).on("click touchend", ".clickToScroll", function() {
             var $anchor = $(this);
             console.log($($anchor.attr('href')));
