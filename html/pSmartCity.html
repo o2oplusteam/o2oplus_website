@@ -12,24 +12,24 @@
   <title>智慧城市应用定制</title>
   <!--pageMeta-->
   <!-- Loading Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
   <!-- Loading Elements Styles -->
-  <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+  <link rel="stylesheet/less" type="text/css" href="../css/style.less" />
   <!-- Loading Magnific-Popup Styles -->
-  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="../css/magnific-popup.css" rel="stylesheet">
   <!-- Loading Font Styles -->
-  <link href="css/iconfont-style.css" rel="stylesheet">
+  <link href="../css/iconfont-style.css" rel="stylesheet">
   <!-- advice styles-->
-  <link href="css/style_public.css" rel="stylesheet">
+  <link href="../css/style_public.css" rel="stylesheet">
   <!-- Favicons -->
-  <link rel="icon" href="images/favicons/favicon.png">
-  <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+  <link rel="icon" href="../images/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
   <!--[if lt IE 9]>
-      <script src="scripts/html5shiv.js"></script>
-      <script src="scripts/respond.min.js"></script>
+      <script src="../scripts/html5shiv.js"></script>
+      <script src="../scripts/respond.min.js"></script>
     <![endif]-->
   <!--headerIncludes-->
 </head>
@@ -49,7 +49,7 @@
       <!--  nav bar will load from /html/nav.html   -->
     </div>
     <div style=" position: fixed;right: 0;top:90%;z-index:400">
-      <img src="images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
+      <img src="../images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
     </div>
 
     <div id="video_div" style="z-index:1001;display:none;position:fixed;width:100%;height:100%;background-color:rgba(44,44,44,0.8);">
@@ -64,7 +64,7 @@
 
     <div style="width:100%;height:45px;"></div>
     <!-- INTRO CENTER -->
-    <div style="width:100%;height:320px;background-color:#024;padding:30px 10%;">
+    <div class="db-intro-block">
       <div style="width:55%;float:left;">
         <span style="color:white;font-size:28px;font-weight:bold;">智慧城市解决方案</span><br><br>
         <span style="color:white;font-size:0.9rem;">跨行业及政府各部门的智慧城市GIS应用，实现信息的全面共享。</span>
@@ -73,7 +73,7 @@
         <div style="margin:0px 10px 0 10px;float:left;width:180px;height:35px;line-height:35px;border:1px #fff solid;color:white;text-align:center;">智慧城市实例预览</div>
       </div>
       <div style="float:right;margin:90px 20% 0px 0px;">
-        <img onclick="videoClick(1);" src="images/newMarket/playVideo.png" width="50px" />
+        <img onclick="videoClick(1);" src="../images/newMarket/playVideo.png" width="50px" />
       </div>
     </div>
 
@@ -92,50 +92,50 @@
         </tr>
         <tr>
           <td class="view_td">
-            <div class="view_bg_all" style="background-image:url(images/newMarket/view_bg1.png);">
+            <div class="view_bg_all" style="background-image:url(../images/newMarket/view_bg1.png);">
               <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="view_bg_all" class="hidden_dark_div">
-                <div class="view_center_img"><img width="100%" src="images/newMarket/view_center1.png" /></div>
+                <div class="view_center_img"><img width="100%" src="../images/newMarket/view_center1.png" /></div>
                 <div class="view_white_line"></div>
                 <div class="view_center_title">电商网站安全防护</div>
               </div>
             </div>
           </td>
           <td class="view_td">
-            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_top.png);">
+            <div class="view_bg_half" style="background-image:url(../images/newMarket/view_bg2_top.png);">
               <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_top.png" /></div>
+                <div class="view_center_img_half"><img width="100%" src="../images/newMarket/view_center2_top.png" /></div>
                 <div class="view_white_line"></div>
                 <div class="view_center_title">数据可视化展示大屏</div>
               </div>
             </div>
-            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg2_bottom.png);">
+            <div class="view_bg_half" style="background-image:url(../images/newMarket/view_bg2_bottom.png);">
               <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center2_bottom.png" /></div>
+                <div class="view_center_img_half"><img width="100%" src="../images/newMarket/view_center2_bottom.png" /></div>
                 <div class="view_white_line"></div>
                 <div class="view_center_title">短信通知和推广</div>
               </div>
             </div>
           </td>
           <td class="view_td">
-            <div class="view_bg_all" style="background-image:url(images/newMarket/view_bg3.png);">
+            <div class="view_bg_all" style="background-image:url(../images/newMarket/view_bg3.png);">
               <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-                <div class="view_center_img"><img width="100%" src="images/newMarket/view_center3.png" /></div>
+                <div class="view_center_img"><img width="100%" src="../images/newMarket/view_center3.png" /></div>
                 <div class="view_white_line"></div>
                 <div class="view_center_title">快速搭建电商平台</div>
               </div>
             </div>
           </td>
           <td class="view_td">
-            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_top.png);">
+            <div class="view_bg_half" style="background-image:url(../images/newMarket/view_bg4_top.png);">
               <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_top.png" /></div>
+                <div class="view_center_img_half"><img width="100%" src="../images/newMarket/view_center4_top.png" /></div>
                 <div class="view_white_line"></div>
                 <div class="view_center_title">个性化推荐</div>
               </div>
             </div>
-            <div class="view_bg_half" style="background-image:url(images/newMarket/view_bg4_bottom.png);">
+            <div class="view_bg_half" style="background-image:url(../images/newMarket/view_bg4_bottom.png);">
               <div onmouseover="changeStyle(this,2,1);" onmouseout="changeStyle(this,2,2);" class="hidden_dark_div">
-                <div class="view_center_img_half"><img width="100%" src="images/newMarket/view_center4_bottom.png" /></div>
+                <div class="view_center_img_half"><img width="100%" src="../images/newMarket/view_center4_bottom.png" /></div>
                 <div class="view_white_line"></div>
                 <div class="view_center_title">支持营销功能的电商平台</div>
               </div>
@@ -216,10 +216,10 @@
         <tr>
           <td colspan="4">
             <div style="width:100%;">
-              <div class="model_left_div">
+              <div class="model_left_div extendHeight">
                 <div align="center" class="model_line_gray">
                   <div>
-                    <img width="40px" src="images/newMarket/mode_left.png" /> 零售公共云
+                    <img width="40px" src="../images/newMarket/mode_left.png" /> 零售公共云
                   </div>
                 </div>
                 <div class="model_line_white">
@@ -231,12 +231,12 @@
                 </div>
               </div>
               <div class="model_right_div">
-                <div align="center" class="model_line_gray" style="height:70px;">
+                <div align="center" class="model_line_gray">
                   <div>
-                    <img width="35px" src="images/newMarket/mode_right.png" /> 零售专有云
+                    <img width="35px" src="../images/newMarket/mode_right.png" /> 零售专有云
                   </div>
                 </div>
-                <div class="model_line_white" style="height:110px;">
+                <div class="model_line_white">
                   结合光声新时空商业体系的能力与云计算能力，提供数据推送、链路稳定性保障、弹性扩展、数据交换、数据融合与挖掘，以及门店数字化等多种服务。
                 </div>
                 <div class="model_line_white">
@@ -285,8 +285,8 @@
                     <span style="font-size:11px;color:black;">全天防护</span>
                   </div>
                 </div>
-                <img width="70%" src="images/newMarket/method_1.jpg" style="border:1px #ddd solid;" />
-                <br><span style="font-size:20px;color:#00a2e1;">￥529/月</span>
+                <img width="70%" src="../images/newMarket/method_1.jpg" class="method_center_img"/>
+                <br><span class="method_center_price">￥529/月</span>
                 <div class="detail_button">查看详情</div>
               </div>
             </div>
@@ -310,8 +310,8 @@
                     <span style="font-size:11px;color:black;">全天防护</span>
                   </div>
                 </div>
-                <img width="70%" src="images/newMarket/method_2.jpg" style="border:1px #ddd solid;" />
-                <br><span style="font-size:20px;color:#00a2e1;">￥1029/月</span>
+                <img width="70%" src="../images/newMarket/method_2.jpg" class="method_center_img"/>
+                <br><span class="method_center_price">￥1029/月</span>
                 <div class="detail_button">查看详情</div>
               </div>
             </div>
@@ -335,8 +335,8 @@
                     <span style="font-size:11px;color:black;">1-5秒</span>
                   </div>
                 </div>
-                <img width="70%" src="images/newMarket/method_3.jpg" style="border:1px #ddd solid;" />
-                <br><span style="font-size:20px;color:#00a2e1;">￥0/月</span>
+                <img width="70%" src="../images/newMarket/method_3.jpg" class="method_center_img"/>
+                <br><span class="method_center_price">￥0/月</span>
                 <div class="detail_button">查看详情</div>
               </div>
             </div>
@@ -573,22 +573,22 @@
 	<div id="footer_div"></div>
 
     <!-- JavaScript -->
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/popper.min.js"></script>
-    <script src="scripts/less.min.js"></script>
-    <script src="scripts/tether.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery.validate.min.js"></script>
-    <script src="scripts/smoothscroll.js"></script>
-    <script src="scripts/jquery.smooth-scroll.min.js"></script>
-    <script src="scripts/placeholders.jquery.min.js"></script>
-    <script src="scripts/jquery.magnific-popup.min.js"></script>
-    <script src="scripts/jquery.counterup.min.js"></script>
-    <script src="scripts/waypoints.min.js"></script>
-    <script src="scripts/video.js"></script>
-    <script src="scripts/bigvideo.js"></script>
-    <script src="scripts/custom.js"></script>
-    <script src="scripts/clickintent.js"></script>
+    <script src="../scripts/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/popper.min.js"></script>
+    <script src="../scripts/less.min.js"></script>
+    <script src="../scripts/tether.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/jquery.validate.min.js"></script>
+    <script src="../scripts/smoothscroll.js"></script>
+    <script src="../scripts/jquery.smooth-scroll.min.js"></script>
+    <script src="../scripts/placeholders.jquery.min.js"></script>
+    <script src="../scripts/jquery.magnific-popup.min.js"></script>
+    <script src="../scripts/jquery.counterup.min.js"></script>
+    <script src="../scripts/waypoints.min.js"></script>
+    <script src="../scripts/video.js"></script>
+    <script src="../scripts/bigvideo.js"></script>
+    <script src="../scripts/custom.js"></script>
+    <script src="../scripts/clickintent.js"></script>
     <script type="text/javascript">
 
 		var width = window.screen.width;
@@ -605,7 +605,8 @@
 				window.location.href="pNewMarket_middle.html";
 			}
 		}
-		//鼠标滑过的变化
+
+    //鼠标滑过的变化
 		function changeStyle(obj,index,type){
 			if(index==1){
 				obj.style.border=type==1?"#0ae 1px solid":"#ddd 1px solid";
@@ -642,9 +643,9 @@
                 interval: false
             });
             // loads the .html in the #navContainer
-            $('#navContainer').load('html/nav_hcl.html');
-      			$('#footer_div').load('html/footer.html');
-      			$('#consult_div').load('html/consult.html');
+            $('#navContainer').load('nav_hcl.html');
+      			$('#footer_div').load('footer.html');
+      			$('#consult_div').load('consult.html');
         });
 
         $(document).on("click touchend", ".clickToScroll", function() {

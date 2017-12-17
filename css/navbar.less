@@ -1,0 +1,199 @@
+@import url("variables.less");
+
+/*----------------------------------------------------------------------------------------
+						TABS STYLES
+-----------------------------------------------------------------------------------------*/
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  .container {
+    .navbar-brand.goto {
+      color: @largTitleColor;
+      font-size: 1.6rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding-top: 0.5rem;
+
+      img {
+        height: 2.8rem;
+        padding-right: 0.6rem;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    right: -0.4rem;
+    background: transparent; //fade(@baseColor, 86%);
+    padding: 0.25rem 0.6rem;
+    // border-color: fade(@baseColor, 86%);
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      width: 1.2em;
+    }
+  }
+
+  .navbar-toggler.blueBtn {
+    background-color: fade(@secondColor, 86%);
+
+    + .navbar-collapse {
+      li.nav-item.active {
+        a.nav-link {
+          color: fade(@secondColor, 90%);
+        }
+      }
+    }
+  }
+
+  .navbar-toggler.greenBtn {
+    background-color: fade(@thirdColor, 86%);
+
+    + .navbar-collapse {
+      li.nav-item.active {
+        a.nav-link {
+          color: fade(@thirdColor, 90%);
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    margin: 0.5rem 0;
+
+    .bg-dark {
+      li.nav-item {
+        a.nav-link {
+          color: #fff;
+
+          &:hover {
+            color: #00c1de;
+          }
+        }
+      }
+    }
+
+    li.nav-item {
+      //a.nav-link {
+      //    padding: .5rem 1rem;
+      //    font-weight: bold;
+      //    &:hover {
+      //         background: none;
+      //    }
+      //}
+      a.nav-link {
+        padding: 0.5rem 0.8rem; //.5rem;
+        font-weight: 500;
+        font-size: 1rem; // .8em;
+        color: #333;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    li.nav-item.active {
+      a.nav-link {
+        color: saturate(@baseColor, 10%); //                color: fade(@baseColor, 90%);
+
+        &:hover {
+          color: @baseColor;
+        }
+
+        &:focus {
+          color: #00c0ff;
+        }
+      }
+    }
+
+    li.nav-item.dropdown {
+      .dropdown-menu.bg-dark {
+        top: 2.8rem;
+
+        a.dropdown-item {
+          color: @dbLink;
+
+          &:hover {
+            color: @dbLinkHover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 35px 25px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+@media (max-width: 767px) {
+  .navbar > li {
+    float: none;
+  }
+
+  .navbar > li a {
+    display: block;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .navbar li:first-child a {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .navbar > li a:hover,
+  .navbar > li.active > a,
+  .navbar > li.active > a:focus,
+  .navbar > li.active > a:hover {
+    border-color: #ddd;
+  }
+}
+/*----------------------------------------------------------------------------------------
+						NAVBAR STYLES
+----------------------------------------------------------------------------------------*/
+.float_div {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  height: 320px;
+  background-color: fade(@darkBgColor, 90%);
+  // background-color: rgb(51, 68, 85);
+}
+
+.float_title {
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 0.9rem;
+  float: left;
+}
+
+.float_product_title {
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 0.9rem;
+  float: left;
+}
+
+.float_content {
+  height: 25px;
+  font-size: 0.8rem;
+}
+
+.float_title_secTitle {
+  font-weight: bold;
+}
