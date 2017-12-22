@@ -46,8 +46,9 @@ footer.lbFooter{
 
 body {
     // font-family: 'PingFangSC-Regular', 'Hind', sans-serif;
-    font-family: 'PingFangSC','helvetica neue','hiragino sans gb','arial','microsoft yahei ui','microsoft yahei','simsun','sans-serif';
-    font-size: 18px;
+    //font-family: 'PingFangSC','helvetica neue','hiragino sans gb','arial','microsoft yahei ui','microsoft yahei','simsun','sans-serif';
+    font-family:'Hiragino Sans GB','helvetica neue','hiragino sans gb','arial','microsoft yahei ui','microsoft yahei','simsun','sans-serif'!important;
+	font-size: 14px;
     font-weight: lighter;
     line-height: 1.5;
     color: #555;
@@ -159,7 +160,7 @@ h4,
 h5 {
     color: #222;
     line-height: 1.2;
-    font-family: 'Roboto', sans-serif;
+    //font-family: 'Roboto', sans-serif;
     font-weight: 100;
     letter-spacing: 0.5px;
 }
@@ -176,12 +177,12 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin: 10px 0 20px 0;
 	text-align:justify;
@@ -189,13 +190,13 @@ h4 {
 
 h5 {
     color: #00c0ff;
-    font-size: 18px;
+    font-size: 16pxpx;
     font-weight: lighter;
     margin: 10px 0 20px 0;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 14px;
     text-align: justify;
     text-indent: 2em;
 }
@@ -339,7 +340,7 @@ hr {
 
 @media (max-width: 1200px) {
     html, body{
-        font-size: 16px;
+        font-size: 14px;
     }
     section,
     header {
@@ -355,7 +356,7 @@ hr {
 @media (max-width: 992px) {
     body {
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
     }
     section,
     header,
@@ -403,7 +404,7 @@ hr {
         width: 100%;
     }
 	p {
-    font-size: 15px;
+    font-size: 14px;
 	}
 }
 
@@ -415,7 +416,9 @@ hr {
         padding-bottom: 40px;
     }
 }
-
+.col-md-4{
+	margin-bottom:20px;
+}
 
 /*----------------------------------------------------------------------------------------
 						customer global style
@@ -2153,7 +2156,7 @@ nav.navbar-slide.show-menu {
 .intro-block {
     padding: 3rem 0 2rem 0;
     width: ~"calc(100vw)";
-    height: ~"calc(100vw * 0.5)"; // .35
+    height: ~"calc(100vw * 0.4)"; // .35
     .container {
         margin-top: 20vh;
     }
@@ -2207,11 +2210,11 @@ nav.navbar-slide.show-menu {
 #carouselExampleControls {
     //height: ~"calc(100vh - 78px)";
     width: ~"calc(100vw)";
-    height: ~"calc(100vw * 0.5)"; // .35
+    height: ~"calc(100vw * 0.4)"; // .35
     padding: 0;
     .carousel-inner {
         width: ~"calc(100vw)";
-        height: ~"calc(100vw * 0.5)"; // .35
+        height: ~"calc(100vw * 0.4)"; // .35
         .carousel-item {
             height: 100%;
             background-position: center center;
@@ -2263,11 +2266,11 @@ nav.navbar-slide.show-menu {
 #carouselExampleControls-gs {
     //height: ~"calc(100vh - 78px)";
     width: ~"calc(100vw)";
-    height: ~"calc(100vw * 0.5)"; // .35
+    height: ~"calc(100vw * 0.4)"; // .35
     padding: 0;
     .carousel-inner-gs {
         width: ~"calc(100vw)";
-        height: ~"calc(100vw * 0.5)"; // .35
+        height: ~"calc(100vw * 0.4)"; // .35
         .carousel-item-gs {
             height: 100%;
             .carousel-caption {
@@ -2498,7 +2501,7 @@ nav.navbar-slide.show-menu {
 }
 
 .container .portfolio-list li {
-    width: 33.33%;
+    width: 25%;
     padding: 15px;
 }
 
@@ -2508,7 +2511,7 @@ nav.navbar-slide.show-menu {
 
 @media (max-width: 1400px) {
     .portfolio-list li {
-        width: 33.33%;
+        width: 25%;
     }
 }
 

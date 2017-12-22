@@ -434,3 +434,39 @@ body {
   text-align: left;
   padding: 25px 10%;
 }
+
+/*----------------------------------------------------------------------------------------
+						INDEX STYLES
+-----------------------------------------------------------------------------------------*/
+.product-title{
+    text-align: center;
+    font-size: 24px;
+    color: #373d41;
+    line-height: 36px;
+    margin-top: 50px;
+}
+.product-sub-title{
+	text-align: center;
+    font-size: 16px;
+    margin: 8px 0 42px;
+    display: block;
+    color: #373d41;
+}
+@media (max-width: 767px) {
+   .product-title{
+    text-align: center;
+    font-size: 18px;
+    color: #373d41;
+    line-height: 36px;
+    margin-top: 50px;
+    font-weight: 600;
+	}
+	.product-sub-title{
+		text-align: center;
+		font-size: 14px;
+		margin: 8px 50px 0px;
+		display: block;
+		color: #373d41;
+	}
+	
+}

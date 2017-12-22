@@ -164,13 +164,13 @@
   display: none;
   position: fixed;
   left: 0;
-  top: 75px;
+  top: 70px;
   width: 100%;
-  height: 24rem;
+  height: calc(100vw * 0.36);
   background-color: lighten(@darkBgColor, 4%);
   // background-color: rgb(51, 68, 85);
 }
-.float_div > .solution_div, .float_div > .product_div{
+.float_div > .solution_div, .float_div > .product_div, .float_div > .service_div{
   width:80%;
   margin:20px 10%;
   display:none;
@@ -193,7 +193,14 @@
   font-size: 0.9rem;
   float: left;
 }
-
+.float_service_title {
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 0.9rem;
+  float: left;
+}
 .float_content {
   height: 30px;
   font-size: 0.8rem;
