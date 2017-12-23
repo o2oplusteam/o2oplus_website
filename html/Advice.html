@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O2O商圈-咨询建议</title>
+    <!--pageMeta-->
+
+    <!-- Loading Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Elements Styles -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+
+    <!-- Loading Magnific-Popup Styles -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <!-- Loading Font Styles -->
+    <link href="css/iconfont-style.css" rel="stylesheet">
+    <!-- advice styles-->
+    <link href="css/style_public.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <!-- Loading Elements Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        div#content {
+            margin: 0 0 0 5%;
+        }
+        
+        .title_left {
+            width: 30%;
+            text-align: right;
+            height: 5rem;
+            line-height: 5rem;
+        }
+        
+        .title_right {
+            width: 70%;
+            height: 5rem;
+            padding: 1rem;
+        }
+        
+        .input_right {
+            width: 40%;
+            height: 3rem;
+            border: 1px #ddd solid;
+        }
+        
+        .textarea_td {
+            width: 70%;
+            height: 5rem;
+            padding: 1rem;
+        }
+        
+        .textarea_right {
+            width: 40%;
+            height: 6rem;
+            border: 1px #ddd solid;
+        }
+
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="../scripts/html5shiv.js"></script>
+      <script src="../scripts/respond.min.js"></script>
+    <![endif]-->
+
+    <!--headerIncludes-->
+</head>
+
+<body data-spy="scroll" data-target=".navMenuCollapse">
+
+    <div id="wrap">
+        <div id="navContainer">
+            <!--  nav bar will load from /html/nav.html   -->
+        </div>
+        <div style=" position: fixed;right: 0;top:90%;z-index:400">
+            <img src="images/top.png" href="#intro-center" style="width:50%" title="回顶部" class="clickToScroll">
+        </div>
+        <!-- SHEDULE BLOCK -->
+
+        <div style="width:100%;height:60px;"></div>
+        <div id="bg_div" style="width:100%;padding:30px 10%;">
+            <table style="width:100%;color:black;font-size:0.8rem;">
+                <tr>
+                    <td colspan="4">
+                        <div class="small_fang"></div>
+                        <span class="title_span">行业解决方案咨询表单</span>
+                        <td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="width:100%;height:30px;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div style="color:black;width:100%;height:2rem;font-size:0.8rem;line-height:2rem;border:1px #aff solid;background-color:#dff;">
+                            &nbsp;&nbsp;建议信息填写尽可能真实，以便于后期业务交流
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title_left">
+                        <span style="color:red;">*</span>姓名：
+                    </td>
+                    <td class="title_right">
+                        <input id="name" type="text" class="input_right" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title_left">
+                        <span style="color:red;">*</span>手机号：
+                    </td>
+                    <td class="title_right">
+                        <input id="n_tel" type="text" class="input_right" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title_left">
+                        <span style="color:red;">*</span>您所属行业：
+                    </td>
+                    <td class="title_right">
+                        <input id="hangye" type="text" class="input_right" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title_left">
+                        <span style="color:red;">*</span>问题咨询：
+                    </td>
+                    <td class="textarea_td">
+                        <textarea id="question" type="text" class="textarea_right"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="title_left">
+                    </td>
+                    <td class="title_right">
+                        <div onclick="submitClick();" style="background-color:#0ae;color:white;font-size:1rem;line-height:2rem;padding:0 2rem;width:6rem;">提交</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer_div">
+        </div>
+    </div>
+
+
+    <!-- MODALS END-->
+    <!-- JavaScript -->
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/less.min.js"></script>
+    <script src="scripts/tether.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/smoothscroll.js"></script>
+    <script src="scripts/jquery.smooth-scroll.min.js"></script>
+    <script src="scripts/placeholders.jquery.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/jquery.easings.min.js"></script>
+    <script src="scripts/jquery.counterup.min.js"></script>
+    <script src="scripts/waypoints.min.js"></script>
+    <script src="scripts/video.js"></script>
+    <script src="scripts/bigvideo.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/clickintent.js"></script>
+    <script type="text/javascript">
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        var adviceType = getQueryString("index"); // 2 咨询类型   3 建议类型
+        var width = window.screen.width;
+        if (width <= 500) {
+            $("#bg_div").css({
+                "padding": "20px 5%"
+            });
+            $(".textarea_right").css({
+                "height": "4rem",
+                "width": "80%"
+            });
+            $(".input_right").css({
+                "height": "2rem",
+                "width": "80%"
+            });
+            $(".title_right").css({
+                "height": "3rem",
+                "padding": "0.5rem"
+            });
+            $(".textarea_td").css({
+                "height": "3rem",
+                "padding": "0.5rem"
+            });
+            $(".title_left").css({
+                "height": "3rem",
+                "line-height": "3rem"
+            });
+        }
+
+
+
+        function submitClick() {
+            var question = document.getElementById("question").value;
+            var n_tel = document.getElementById("n_tel").value;
+            var name = document.getElementById("name").value;
+            var hangye = document.getElementById("hangye").value;
+            if (name.length == 0) {
+                alert("请您先填写您的姓名");
+                return;
+            } else if (hangye.length == 0) {
+                alert("请您先填写您的所属行业");
+                return;
+            } else if (question == null || question.length == 0) {
+                alert("请您先填写您想要咨询的问题");
+                return;
+            } else if (n_tel.length == 0) {
+                alert("请您先填写您的手机号");
+                return;
+            }
+            var params = "String@" + escape(question) + ",String@" + escape(n_tel) + ",String@3" + ",String@" + escape(name) + ",String@" + escape(hangye) + ",String@";
+            var index = 1;
+            $.ajax({
+                type: "POST",
+                url: "http://www.o2oplus.com.cn/o2osq/MobileCommonServlet?method=submitAdvice",
+                data: {
+                    "type": "json",
+                    "params": params
+                },
+                async: true,
+                jsonp: "callbackparam",
+                success: function(msg) {
+                    if (msg.indexOf("true") != -1) {
+                        alert("数据提交成功");
+                    } else if (msg.indexOf("false") != -1) {
+                        alert("数据提交失败，请稍后再试");
+                    }
+                },
+                complete: function(dd) {
+
+                },
+                error: function(msg) {
+
+                }
+            });
+            /*params = "String@"+escape(content)+"";
+            $.ajax({
+            	type: "POST",
+            	url: "http://122.122.200.19:8888/gsmobile/MobileCommonServlet?method=submitStr",
+            	data: {"type":"jsonp","params":params},
+            	async: true,
+            	jsonp:"callbackparam",
+            	back:"successCallBack",
+            	success: function(data){
+            		alert("success - "+data);
+            	},complete:function(dd){
+            		alert("complete - "+dd);
+            	},error:function(msg){
+            		alert("error - "+msg);
+            		for(pp in msg){
+            			//alert(pp+" - "+msg[pp]);
+            		}
+            	}
+            });*/
+        }
+        $('#footer_div').load('html/footer.html');
+        $('#navContainer').load('html/nav_hcl.html');
+        $(function() {
+            $('.carousel').carousel({
+                pause: true,
+                interval: false
+            });
+
+            // loads the .html in the #navContainer
+            $('#navContainer').load('html/nav.html');
+        });
+
+        $(document).on("click touchend", ".clickToScroll", function() {
+            var $anchor = $(this);
+            console.log($($anchor.attr('href')));
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 800, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>
